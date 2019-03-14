@@ -7,7 +7,18 @@
   padding-right: 0px !important;
 }
 
+.contents {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .content {
+    margin: 1rem;
+  }
+}
+
 .footer-contents {
+  position: absolute;
+  width: 100%;
   h3 {
     font-size: 16px;
     color: #282828;
@@ -15,9 +26,19 @@
     color: white !important;
   }
   .get-in-touch {
-    bottom: 10%;
+    bottom: 30px;
     position: absolute;
   }
+}
+
+.bottom-nav {
+  font-size: 10px !important;
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 .slick-next:before,
@@ -200,9 +221,15 @@
       height: 100%;
     }
   }
+  .top-fluid-image {
+    max-width: 100%;
+    img {
+      height: 270px;
+    }
+  }
 }
 
-@media (min-width: 501px) and (max-width: 990px) {
+@media (min-width: 280px) and (max-width: 990px) {
   .al-it-center {
     text-align: center;
     // padding: 8px;
