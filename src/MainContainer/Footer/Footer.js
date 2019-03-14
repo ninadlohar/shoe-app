@@ -11,7 +11,7 @@ const Footer = () => {
           <h3>Get In Touch</h3>
         </div>
         <div />
-        <div />
+        <div className="get-the-app">Get The App</div>
         <BottomNav />
       </div>
     </div>

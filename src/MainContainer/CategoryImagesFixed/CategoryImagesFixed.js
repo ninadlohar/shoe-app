@@ -10,13 +10,32 @@ const CategoryImagesFixed = () => {
       <Col md="12" sm="12" lg="12" xl="12" sm="12">
         <Row className="nomargin">
           <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center">
-            <img src={require("../../assets/cat1.png")} alt="cat1" />
+            <img
+              src={require("../../assets/cat1.png")}
+              alt="cat1"
+              className="img-responsive"
+            />
           </Col>
-          <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center">
-            <img src={require("../../assets/cat2.png")} alt="cat2" />
+          <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center ">
+            <img
+              src={require("../../assets/cat2.png")}
+              alt="cat2"
+              className="img-responsive"
+            />
           </Col>
-          <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center">
-            <img src={require("../../assets/cat3.png")} alt="cat3" />
+          <Col
+            sm="12"
+            xs="12"
+            md="6"
+            lg="4"
+            xl="4"
+            className="al-it-center img-responsive"
+          >
+            <img
+              src={require("../../assets/cat3.png")}
+              alt="cat3"
+              className="img-responsive"
+            />
           </Col>
         </Row>
       </Col>

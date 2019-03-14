@@ -7,6 +7,11 @@
   padding-right: 0px !important;
 }
 
+.img-responsive {
+  height: auto;
+  width: 100%;
+}
+
 .contents {
   width: 100%;
   display: flex;
@@ -20,9 +25,13 @@
   display: inline-flex !important;
   justify-content: center;
   img {
-    height: 150px;
+    height: 130px;
     width: 240px;
   }
+}
+
+.brand-card:hover {
+  box-shadow: 1px 1px 1px 1px #d4d4d4;
 }
 
 .footer-contents {
@@ -35,7 +44,16 @@
     color: white !important;
   }
   .get-in-touch {
-    bottom: 30px;
+    bottom: 80px;
+    left: 15%;
+    position: absolute;
+  }
+  .get-the-app {
+    bottom: 80px;
+    right: 15%;
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+
     position: absolute;
   }
 }
@@ -91,7 +109,7 @@
   display: flex;
 
   img {
-    width: 320px;
+    // width: 320px;
     height: 220px;
   }
 }
