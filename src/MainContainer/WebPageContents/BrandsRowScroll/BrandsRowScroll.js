@@ -1,5 +1,5 @@
 import React from "react";
-import "../../MainContainer/global.scss";
+import "../../global.scss";
 import Slider from "react-slick";
 
 class FirstRowCardScroll extends React.Component {
@@ -80,45 +80,51 @@ class FirstRowCardScroll extends React.Component {
         <Slider {...settings}>
           <div className="brand-card">
             <img
-              src={require("../../assets/converse.png")}
+              src={require("../../../assets/converse.png")}
               alt="black-nike-shoe"
             />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/jordan.png")} alt="nike-shoe" />
+            <img src={require("../../../assets/puma.png")} alt="nike-shoe" />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/nike.png")} alt="nike-shoe" />
+            <img src={require("../../../assets/nike.png")} alt="nike-shoe" />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/basics.png")} alt="nike-shoe" />
-          </div>
-          <div className="brand-card">
-            <img src={require("../../assets/newbalance.png")} alt="nike-shoe" />
-          </div>
-          <div className="brand-card">
-            <img src={require("../../assets/puma.png")} alt="nike-shoe" />
+            <img src={require("../../../assets/basics.png")} alt="nike-shoe" />
           </div>
           <div className="brand-card">
             <img
-              src={require("../../assets/converse.png")}
+              src={require("../../../assets/newbalance.png")}
+              alt="nike-shoe"
+            />
+          </div>
+          <div className="brand-card">
+            <img src={require("../../../assets/puma.png")} alt="nike-shoe" />
+          </div>
+          <div className="brand-card">
+            <img
+              src={require("../../../assets/converse.png")}
               alt="black-nike-shoe"
             />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/jordan.png")} alt="nike-shoe" />
+            <img src={require("../../../assets/jordan.png")} alt="nike-shoe" />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/nike.png")} alt="nike-shoe" />
+            <img src={require("../../../assets/nike.png")} alt="nike-shoe" />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/basics.png")} alt="nike-shoe" />
+            <img src={require("../../../assets/basics.png")} alt="nike-shoe" />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/newbalance.png")} alt="nike-shoe" />
+            <img
+              src={require("../../../assets/newbalance.png")}
+              alt="nike-shoe"
+            />
           </div>
           <div className="brand-card">
-            <img src={require("../../assets/puma.png")} alt="nike-shoe" />
+            <img src={require("../../../assets/puma.png")} alt="nike-shoe" />
           </div>
         </Slider>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
-import "../../MainContainer/global.scss";
-import { Container, Row, Col } from "reactstrap";
+import "../../global.scss";
 
 const BottomNav = () => {
   return (

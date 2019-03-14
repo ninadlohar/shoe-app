@@ -1,5 +1,5 @@
 import React from "react";
-import "../../MainContainer/global.scss";
+import "../../global.scss";
 import { Container, Row, Col } from "reactstrap";
 
 const CategoryImagesFixed = () => {
@@ -11,14 +11,14 @@ const CategoryImagesFixed = () => {
         <Row className="nomargin">
           <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center">
             <img
-              src={require("../../assets/cat1.png")}
+              src={require("../../../assets/cat1.png")}
               alt="cat1"
               className="img-responsive"
             />
           </Col>
           <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center ">
             <img
-              src={require("../../assets/cat2.png")}
+              src={require("../../../assets/cat2.png")}
               alt="cat2"
               className="img-responsive"
             />
@@ -32,7 +32,7 @@ const CategoryImagesFixed = () => {
             className="al-it-center img-responsive"
           >
             <img
-              src={require("../../assets/cat3.png")}
+              src={require("../../../assets/cat3.png")}
               alt="cat3"
               className="img-responsive"
             />

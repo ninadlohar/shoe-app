@@ -1,20 +1,7 @@
 import { Container, Row, Col } from "reactstrap";
 import React from "react";
-import RightNavbar from "./Navbar/Navbar";
-import Logo from "./Logo/Logo";
-import Header from "./Header/Header";
-import Trending from "./Trending/Treding";
-import CategoriesHeader from "./CategoriesHeader/CategoriesHeader";
-import FirstRowCardScroll from "./FirstRowCardScroll/FirstRowCardScroll";
-import CategoryImagesFixed from "./CategoryImagesFixed/CategoryImagesFixed";
-import UpComingReleasesHeader from "./UpcomingReleasesHeader/UpcomingReleasesHeader";
-import UpcomingReleasesRowSlider from "./UpcomingReleasesRowSlider/UpcomingReleasesRowSlider";
-import Deals from "./Deals/Deals";
-import DealsHeader from "./DealsHeader/DealsHeader";
-import BrandsHeader from "./BrandsHeader/BrandsHeader";
-import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
-import Footer from "./Footer/Footer";
 import "./global.scss";
+import WebPageContents from "./WebPageContents/WebpageContents";
 
 class MainContainer extends React.Component {
   render() {
@@ -32,21 +19,7 @@ class MainContainer extends React.Component {
               </div>
             </Col>
           </Row>
-          <Logo />
-          <RightNavbar />
-          <Header />
-          <Trending />
-          <FirstRowCardScroll />
-          <CategoriesHeader />
-          <CategoryImagesFixed />
-          <BrandsHeader />
-          <BrandsRowScroll />
-          <UpComingReleasesHeader />
-          <UpcomingReleasesRowSlider />
-          <DealsHeader />
-          <Deals />
-
-          <Footer />
+          <WebPageContents />
         </Container>
       </div>
     );

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../MainContainer/global.scss";
+import "../../global.scss";
 import Slider from "react-slick";
 
 class FirstRowCardScroll extends React.Component {
@@ -80,24 +80,39 @@ class FirstRowCardScroll extends React.Component {
         <Slider {...settings}>
           <div className="shoe-card">
             <img
-              src={require("../../assets/d1-offer.png")}
+              src={require("../../../assets/d1-offer.png")}
               alt="black-nike-shoe"
             />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
+            <img
+              src={require("../../../assets/d1-offer.png")}
+              alt="nike-shoe"
+            />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
+            <img
+              src={require("../../../assets/d1-offer.png")}
+              alt="nike-shoe"
+            />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
+            <img
+              src={require("../../../assets/d1-offer.png")}
+              alt="nike-shoe"
+            />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
+            <img
+              src={require("../../../assets/d1-offer.png")}
+              alt="nike-shoe"
+            />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
+            <img
+              src={require("../../../assets/d1-offer.png")}
+              alt="nike-shoe"
+            />
           </div>
         </Slider>
       </div>

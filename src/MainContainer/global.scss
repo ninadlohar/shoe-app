@@ -30,6 +30,20 @@
   }
 }
 
+.footer-brand-logo {
+  bottom: 60px;
+  left: 40%;
+  width: 200px;
+  position: absolute;
+}
+
+.brand-logo-bottom {
+  img {
+    height: auto;
+    width: 240px;
+  }
+}
+
 .brand-card:hover {
   box-shadow: 1px 1px 1px 1px #d4d4d4;
 }
@@ -226,6 +240,23 @@
 @media (min-width: 200px) and (max-width: 499px) {
   .main-header-padding {
     padding: 16px 0px;
+  }
+  .get-in-touch {
+    display: none;
+  }
+  .get-the-app {
+    display: none;
+  }
+  .contents {
+    display: block;
+    text-align: center;
+  }
+  .contents .content {
+    display: block;
+    margin: 4px;
+  }
+  .bottom-nav {
+    bottom: 30px;
   }
 }
 

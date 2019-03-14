@@ -1,8 +1,8 @@
 import React from "react";
-import "../../MainContainer/global.scss";
+import "../../global.scss";
 import Slider from "react-slick";
 
-class UpcomingReleasesRowSlider extends React.Component {
+class FirstRowCardScroll extends React.Component {
   render() {
     function SampleNextArrow(props) {
       const { className, style, onClick } = props;
@@ -78,41 +78,26 @@ class UpcomingReleasesRowSlider extends React.Component {
     return (
       <div className="first-row-card-scroll-padding-l-r">
         <Slider {...settings}>
-          <div className="up-rel-card">
+          <div className="shoe-card">
             <img
-              src={require("../../assets/nike-black-shoe.png")}
+              src={require("../../../assets/black.png")}
               alt="black-nike-shoe"
             />
           </div>
-          <div className="up-rel-card">
-            <img
-              src={require("../../assets/nike-black-shoe.png")}
-              alt="nike-shoe"
-            />
+          <div className="shoe-card">
+            <img src={require("../../../assets/shoe.png")} alt="nike-shoe" />
           </div>
-          <div className="up-rel-card">
-            <img
-              src={require("../../assets/nike-black-shoe.png")}
-              alt="nike-shoe"
-            />
+          <div className="shoe-card">
+            <img src={require("../../../assets/shoe.png")} alt="nike-shoe" />
           </div>
-          <div className="up-rel-card">
-            <img
-              src={require("../../assets/nike-black-shoe.png")}
-              alt="nike-shoe"
-            />
+          <div className="shoe-card">
+            <img src={require("../../../assets/shoe.png")} alt="nike-shoe" />
           </div>
-          <div className="up-rel-card">
-            <img
-              src={require("../../assets/nike-black-shoe.png")}
-              alt="nike-shoe"
-            />
+          <div className="shoe-card">
+            <img src={require("../../../assets/shoe.png")} alt="nike-shoe" />
           </div>
-          <div className="up-rel-card">
-            <img
-              src={require("../../assets/nike-black-shoe.png")}
-              alt="nike-shoe"
-            />
+          <div className="shoe-card">
+            <img src={require("../../../assets/shoe.png")} alt="nike-shoe" />
           </div>
         </Slider>
       </div>
@@ -120,4 +105,4 @@ class UpcomingReleasesRowSlider extends React.Component {
   }
 }
 
-export default UpcomingReleasesRowSlider;
+export default FirstRowCardScroll;

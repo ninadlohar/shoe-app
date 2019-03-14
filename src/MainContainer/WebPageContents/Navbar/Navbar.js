@@ -7,6 +7,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+import "../../global.scss";
 
 export default class Example extends React.Component {
   constructor(props) {
