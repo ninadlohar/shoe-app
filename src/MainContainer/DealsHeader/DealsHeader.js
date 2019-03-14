@@ -1,12 +1,12 @@
 import React from "react";
 import "../../MainContainer/global.scss";
 
-const BrandsHeader = () => {
+const DealsHeader = () => {
   return (
     <div className="trending">
-      <h3>Brands</h3>
+      <h3>Deals</h3>
     </div>
   );
 };
 
-export default BrandsHeader;
+export default DealsHeader;

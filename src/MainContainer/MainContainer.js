@@ -6,9 +6,14 @@ import Header from "./Header/Header";
 import Trending from "./Trending/Treding";
 import CategoriesHeader from "./CategoriesHeader/CategoriesHeader";
 import FirstRowCardScroll from "./FirstRowCardScroll/FirstRowCardScroll";
+import CategoryImagesFixed from "./CategoryImagesFixed/CategoryImagesFixed";
+import UpComingReleasesHeader from "./UpcomingReleasesHeader/UpcomingReleasesHeader";
+import UpcomingReleasesRowSlider from "./UpcomingReleasesRowSlider/UpcomingReleasesRowSlider";
+import Deals from "./Deals/Deals";
+import DealsHeader from "./DealsHeader/DealsHeader";
 import BrandsHeader from "./BrandsHeader/BrandsHeader";
 import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
-
+import Footer from "./Footer/Footer";
 import "./global.scss";
 
 class MainContainer extends React.Component {
@@ -16,8 +21,8 @@ class MainContainer extends React.Component {
     return (
       <div>
         <Container fluid={true} className="nopadding">
-          <Row>
-            <Col md="12" sm="12" lg="12" xl="12" sm="12">
+          <Row className="nomargin">
+            <Col md="12" sm="12" lg="12" xl="12" sm="12" className="nopadding">
               <div className="top-fluid-image">
                 <img
                   src={require("../assets/Group_2668.png")}
@@ -33,8 +38,14 @@ class MainContainer extends React.Component {
           <Trending />
           <FirstRowCardScroll />
           <CategoriesHeader />
-          <BrandsHeader />
-          <BrandsRowScroll />
+          <CategoryImagesFixed />
+          <UpComingReleasesHeader />
+          <UpcomingReleasesRowSlider />
+          <DealsHeader />
+          <Deals />
+          {/* <BrandsHeader />
+          <BrandsRowScroll /> */}
+          <Footer />
         </Container>
       </div>
     );

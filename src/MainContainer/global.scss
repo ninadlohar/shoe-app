@@ -1,10 +1,73 @@
-.xyz {
-  background-color: tomato;
+.slick-dots {
+  display: none;
 }
 
 .nopadding {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.footer-contents {
+  h3 {
+    font-size: 16px;
+    color: #282828;
+    font-family: "Poppins", sans-serif;
+    color: white !important;
+  }
+  .get-in-touch {
+    bottom: 10%;
+    position: absolute;
+  }
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 15px !important;
+  line-height: 1;
+  color: #3e3e3e;
+}
+
+.slick-arrow.slick-prev {
+  background: white !important;
+  top: -10px;
+  left: 92%;
+  color: rgb(84, 84, 84);
+}
+.slick-arrow.slick-next {
+  background: white !important;
+  top: -10px;
+  left: 92%;
+  color: rgb(84, 84, 84);
+}
+
+.slick-arrow.slick-next::before {
+  background: white;
+  top: -10px;
+  left: 92%;
+  color: rgb(84, 84, 84);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "";
+  font-size: 20px;
+  line-height: 1;
+  color: #3e3e3e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cat-images {
+  display: flex;
+
+  img {
+    width: 320px;
+    height: 220px;
+  }
+}
+
+.al-it-center {
+  text-align: center;
 }
 
 .first-row-card-scroll-padding-l-r {
@@ -13,12 +76,44 @@
   background-color: white;
 }
 
+.nomargin {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.footer {
+  margin-top: 30px;
+  height: 180px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .shoe-card {
-  padding: 8px;
+  display: inline-flex !important;
+  justify-content: center;
+  // padding: 8px;
+  img {
+    height: 280px;
+    width: 250px;
+  }
+}
+
+.up-rel-card {
+  display: inline-flex !important;
+  justify-content: center;
+  img {
+    height: 180px;
+    width: 250px;
+  }
 }
 
 .brands-card {
-  margin: 1rem;
+  img {
+    height: 120px;
+    width: 180px;
+  }
 }
 
 .trending {
@@ -73,4 +168,44 @@
 
 .bg-light {
   background-color: black !important;
+}
+
+@media (min-width: 700px) and (max-width: 880px) {
+  .main-header-padding {
+    padding: 16px 100px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 699px) {
+  .main-header-padding {
+    padding: 16px 20px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 499px) {
+  .main-header-padding {
+    padding: 16px 0px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .logo {
+    width: 60px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 30px;
+    margin: 30px;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 990px) {
+  .al-it-center {
+    text-align: center;
+    // padding: 8px;
+    margin-bottom: 10px;
+  }
 }

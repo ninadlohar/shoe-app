@@ -80,24 +80,24 @@ class FirstRowCardScroll extends React.Component {
         <Slider {...settings}>
           <div className="shoe-card">
             <img
-              src={require("../../assets/black.png")}
+              src={require("../../assets/d1-offer.png")}
               alt="black-nike-shoe"
             />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/shoe.png")} alt="nike-shoe" />
+            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/shoe.png")} alt="nike-shoe" />
+            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/shoe.png")} alt="nike-shoe" />
+            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/shoe.png")} alt="nike-shoe" />
+            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
           </div>
           <div className="shoe-card">
-            <img src={require("../../assets/shoe.png")} alt="nike-shoe" />
+            <img src={require("../../assets/d1-offer.png")} alt="nike-shoe" />
           </div>
         </Slider>
       </div>
