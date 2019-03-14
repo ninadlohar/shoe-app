@@ -16,6 +16,15 @@
   }
 }
 
+.brand-card {
+  display: inline-flex !important;
+  justify-content: center;
+  img {
+    height: 150px;
+    width: 240px;
+  }
+}
+
 .footer-contents {
   position: absolute;
   width: 100%;
@@ -127,13 +136,6 @@
   img {
     height: 180px;
     width: 250px;
-  }
-}
-
-.brands-card {
-  img {
-    height: 120px;
-    width: 180px;
   }
 }
 

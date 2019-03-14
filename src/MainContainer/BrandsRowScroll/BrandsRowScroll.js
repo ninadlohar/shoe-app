@@ -1,194 +1,129 @@
-import React, { Component } from "react";
+import React from "react";
+import "../../MainContainer/global.scss";
 import Slider from "react-slick";
 
-export default class BrandsRowScroll extends Component {
+class FirstRowCardScroll extends React.Component {
   render() {
-    const settings = {
-      // className: "center",
-      // centerMode: true,
-      // centerPadding: "60px",
-      // slidesToShow: 3,
-      // speed: 500,
-      // rows: 2,
-      // dots: false,
-      // infinite: true,
-      // slidesPerRow: 2,
-      className: "center",
-      centerMode: true,
+    function SampleNextArrow(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{
+            ...style,
+            display: "block",
+            background: "#545454",
+            top: -10,
+            left: "95%",
+            color: "#545454"
+          }}
+          onClick={onClick}
+        />
+      );
+    }
+
+    function SamplePrevArrow(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{
+            ...style,
+            display: "block",
+            background: "#545454",
+            top: -10,
+            left: "92%",
+            color: "#545454"
+          }}
+          onClick={onClick}
+        />
+      );
+    }
+    var settings = {
       infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 3,
       speed: 500,
-      rows: 2,
-      slidesPerRow: 2,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       responsive: [
         {
-          breakpoint: 2400,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 3,
-            infinite: true
-          }
-        },
-        {
-          breakpoint: 1800,
+          breakpoint: 1064,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false
           }
         },
         {
-          breakpoint: 2800,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 3,
-            infinite: true
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 3,
-            infinite: true
-          }
-        },
-        {
-          breakpoint: 1300,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 3,
-            infinite: true
-          }
-        },
-        {
-          breakpoint: 600,
+          breakpoint: 800,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialSlide: 2
+            initialSlide: 2,
+            dots: false
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 550,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: false
           }
         }
       ]
     };
     return (
-      <div>
+      <div className="first-row-card-scroll-padding-l-r">
         <Slider {...settings}>
-          <div>
-            <img
-              src={require("../../assets/basics.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>
-          <div>
+          <div className="brand-card">
             <img
               src={require("../../assets/converse.png")}
-              alt="nike-shoe"
-              className="brands"
+              alt="black-nike-shoe"
             />
           </div>
-          <div>
+          <div className="brand-card">
+            <img src={require("../../assets/jordan.png")} alt="nike-shoe" />
+          </div>
+          <div className="brand-card">
+            <img src={require("../../assets/nike.png")} alt="nike-shoe" />
+          </div>
+          <div className="brand-card">
+            <img src={require("../../assets/basics.png")} alt="nike-shoe" />
+          </div>
+          <div className="brand-card">
+            <img src={require("../../assets/newbalance.png")} alt="nike-shoe" />
+          </div>
+          <div className="brand-card">
+            <img src={require("../../assets/puma.png")} alt="nike-shoe" />
+          </div>
+          <div className="brand-card">
             <img
-              src={require("../../assets/nike.png")}
-              alt="nike-shoe"
-              className="brands"
+              src={require("../../assets/converse.png")}
+              alt="black-nike-shoe"
             />
           </div>
-          <div>
-            <img
-              src={require("../../assets/jordan.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
+          <div className="brand-card">
+            <img src={require("../../assets/jordan.png")} alt="nike-shoe" />
           </div>
-          <div>
-            <img
-              src={require("../../assets/newbalance.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
+          <div className="brand-card">
+            <img src={require("../../assets/nike.png")} alt="nike-shoe" />
           </div>
-          <div>
-            <img
-              src={require("../../assets/puma.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
+          <div className="brand-card">
+            <img src={require("../../assets/basics.png")} alt="nike-shoe" />
           </div>
-          <div>
-            <img
-              src={require("../../assets/nike.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
+          <div className="brand-card">
+            <img src={require("../../assets/newbalance.png")} alt="nike-shoe" />
           </div>
-          <div>
-            <img
-              src={require("../../assets/newbalance.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/jordan.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>
-          <div>
-            <img
-              src={require("../../assets/basics.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/puma.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>
-          <div>
-            <img
-              src={require("../../assets/nike.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/jordan.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>
-          <div>
-            <img
-              src={require("../../assets/basics.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
-          </div>
-          <div>
-            <img
-              src={require("../../assets/newbalance.png")}
-              alt="nike-shoe"
-              className="brands"
-            />
+          <div className="brand-card">
+            <img src={require("../../assets/puma.png")} alt="nike-shoe" />
           </div>
         </Slider>
       </div>
     );
   }
 }
+
+export default FirstRowCardScroll;

@@ -39,12 +39,13 @@ class MainContainer extends React.Component {
           <FirstRowCardScroll />
           <CategoriesHeader />
           <CategoryImagesFixed />
+          <BrandsHeader />
+          <BrandsRowScroll />
           <UpComingReleasesHeader />
           <UpcomingReleasesRowSlider />
           <DealsHeader />
           <Deals />
-          {/* <BrandsHeader />
-          <BrandsRowScroll /> */}
+
           <Footer />
         </Container>
       </div>
