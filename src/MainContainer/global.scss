@@ -12,11 +12,20 @@
   border-radius: 4px;
 }
 
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.bm-menu {
+  background-color: white;
+}
+
 a#contact.bm-item.menu-item {
-  color: white;
+  color: black;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   padding-top: 24px;
+  padding-left: 20px;
 }
 
 a#contact.bm-item.menu-item:active {
@@ -36,6 +45,7 @@ a#contact.bm-item.menu-item:focus,
 a#contact.bm-item.menu-item:focus-within {
   color: white;
   font-size: 14px;
+  padding-left: 20px;
   font-family: "Poppins", sans-serif;
   outline-color: black;
 }
@@ -369,6 +379,9 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .nav-item:hover {
     border-bottom: 1px solid white;
+  }
+  .bm-menu-wrap {
+    height: 35% !important;
   }
   // .inputBox {
   //   display: none;
