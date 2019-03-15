@@ -9,7 +9,6 @@
   right: 0;
   top: 0px;
   margin: 8px;
-  border: 1px solid white;
   border-radius: 4px;
 }
 
@@ -17,6 +16,21 @@ a#contact.bm-item.menu-item {
   color: white;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+}
+
+a#contact.bm-item.menu-item:active {
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+}
+
+a#contact.bm-item.menu-item:focus,
+a#contact.bm-item.menu-item:focus-within {
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  outline-color: black;
 }
 
 .bm-burger-bars {
