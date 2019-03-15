@@ -62,6 +62,22 @@ class MainContainer extends React.Component {
                     >
                       Blog
                     </a>
+                    <a
+                      id="contact"
+                      className="menu-item"
+                      href="/contact"
+                      onClick={() => this.closeMenu()}
+                    >
+                      FAQ
+                    </a>
+                    <a
+                      id="contact"
+                      className="menu-item"
+                      href="/contact"
+                      onClick={() => this.closeMenu()}
+                    >
+                      Contact
+                    </a>
                   </Menu>
                 </div>
                 <RightNavbar />

@@ -43,11 +43,11 @@ a#contact.bm-item.menu-item:active {
 
 a#contact.bm-item.menu-item:focus,
 a#contact.bm-item.menu-item:focus-within {
-  color: white;
+  color: black;
   font-size: 14px;
   padding-left: 20px;
   font-family: "Poppins", sans-serif;
-  outline-color: black;
+  outline-color: white;
 }
 
 .bm-burger-bars {
@@ -381,7 +381,7 @@ a#contact.bm-item.menu-item:focus-within {
     border-bottom: 1px solid white;
   }
   .bm-menu-wrap {
-    height: 35% !important;
+    height: 100% !important;
   }
   // .inputBox {
   //   display: none;
