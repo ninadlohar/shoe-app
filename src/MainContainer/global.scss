@@ -16,6 +16,7 @@ a#contact.bm-item.menu-item {
   color: white;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+  padding-top: 24px;
 }
 
 a#contact.bm-item.menu-item:active {
@@ -23,6 +24,12 @@ a#contact.bm-item.menu-item:active {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   border: 1px solid black;
+}
+
+.fas.fa-search {
+  left: 95%;
+  position: absolute;
+  top: 25%;
 }
 
 a#contact.bm-item.menu-item:focus,
@@ -308,6 +315,11 @@ a#contact.bm-item.menu-item:focus-within {
   .bottom-nav {
     bottom: 30px;
   }
+  .fas.fa-search {
+    left: 85%;
+    position: absolute;
+    top: 25%;
+  }
 }
 
 @media (min-width: 200px) and (max-width: 700px) {
@@ -361,6 +373,14 @@ a#contact.bm-item.menu-item:focus-within {
   // .inputBox {
   //   display: none;
   // }
+}
+
+@media (min-width: 500px) and (max-width: 989px) {
+  .fas.fa-search {
+    left: 90%;
+    position: absolute;
+    top: 25%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 5000px) {
