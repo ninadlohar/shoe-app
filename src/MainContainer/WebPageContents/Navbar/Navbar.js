@@ -3,11 +3,15 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
+  NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from "reactstrap";
-import "../../global.scss";
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -27,6 +31,7 @@ export default class Example extends React.Component {
     return (
       <div className="navbar-at-right">
         <Navbar light expand="md">
+          <NavbarBrand href="/" />
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

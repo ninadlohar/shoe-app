@@ -48,6 +48,15 @@ class FirstRowCardScroll extends React.Component {
       prevArrow: <SamplePrevArrow />,
       responsive: [
         {
+          breakpoint: 1800,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
           breakpoint: 1064,
           settings: {
             slidesToShow: 3,

@@ -11,6 +11,7 @@ import UpcomingReleasesRowSlider from "./UpcomingReleasesRowSlider/UpcomingRelea
 import Deals from "./Deals/Deals";
 import DealsHeader from "./DealsHeader/DealsHeader";
 import BrandsHeader from "./BrandsHeader/BrandsHeader";
+import InputBox from "./InputBox/InputBox";
 import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
 import Footer from "./Footer/Footer";
 
@@ -18,7 +19,8 @@ const WebPageContents = () => {
   return (
     <div>
       <Logo />
-      <RightNavbar />
+      {/* <RightNavbar /> */}
+      {/* <InputBox /> */}
       <Header />
       <Trending />
       <FirstRowCardScroll />

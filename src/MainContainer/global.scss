@@ -2,6 +2,41 @@
   display: none;
 }
 
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right: 0;
+  top: 0px;
+  margin: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+a#contact.bm-item.menu-item {
+  color: white;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.bm-burger-bars {
+  background-color: white;
+}
+
+.inputBox {
+  position: absolute;
+  top: 45%;
+  width: 50%;
+  left: 25%;
+  font-family: "Poppins", sans-serif;
+}
+
+.inputBox .form-control {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0px;
+}
+
 .nopadding {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -183,7 +218,8 @@
 }
 
 .top-fluid-image {
-  max-width: 100%;
+  height: 280px;
+  background-image: url("../assets/Group_2668.png");
 }
 
 .main-header {
@@ -285,5 +321,36 @@
     text-align: center;
     // padding: 8px;
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .nav-item {
+    font-weight: bold;
+  }
+  .navbar-light .navbar-toggler {
+    color: white !important;
+    border-color: white !important;
+  }
+  .navbar-toggler {
+    background-color: white !important;
+    border: white !important;
+  }
+  .navbar-at-right {
+    // width: 100%;
+    // text-align: center;
+    display: none;
+  }
+  .nav-item:hover {
+    border-bottom: 1px solid white;
+  }
+  // .inputBox {
+  //   display: none;
+  // }
+}
+
+@media (min-width: 769px) and (max-width: 5000px) {
+  .ham-menu {
+    display: none;
   }
 }
