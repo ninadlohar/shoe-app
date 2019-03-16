@@ -2,13 +2,33 @@
   display: none;
 }
 
+.drop-Down {
+  display: flex;
+  position: absolute;
+  top: 45%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-group .btn-secondary {
+  color: #495057;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  border-radius: 0px;
+  padding: 9.5px 16px;
+  border-radius: 0px;
+  border: none;
+}
+
 .bm-burger-button {
   position: absolute;
-  width: 36px;
-  height: 30px;
+  width: 26px;
+  height: 20px;
   right: 0;
   top: 0px;
-  margin: 8px;
+  margin: 20px;
   border-radius: 4px;
 }
 
@@ -36,7 +56,7 @@ a#contact.bm-item.menu-item:active {
 }
 
 .fas.fa-search {
-  left: 95%;
+  left: 75%;
   position: absolute;
   top: 25%;
 }
@@ -55,17 +75,17 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 .inputBox {
-  position: absolute;
   top: 45%;
   width: 50%;
-  left: 25%;
   font-family: "Poppins", sans-serif;
 }
 
 .inputBox .form-control {
   font-size: 12px;
   font-family: "Poppins", sans-serif;
+  border: none;
   border-radius: 0px;
+  border-left: 1px solid #cfcfcf;
 }
 
 .nopadding {
@@ -158,7 +178,7 @@ a#contact.bm-item.menu-item:focus-within {
 .slick-arrow.slick-prev {
   background: white !important;
   top: -10px;
-  left: 92%;
+  left: 91%;
   color: rgb(84, 84, 84);
 }
 .slick-arrow.slick-next {
@@ -326,9 +346,12 @@ a#contact.bm-item.menu-item:focus-within {
     bottom: 30px;
   }
   .fas.fa-search {
-    left: 85%;
+    left: 75%;
     position: absolute;
     top: 25%;
+  }
+  .slick-arrow.slick-prev {
+    left: 90% !important;
   }
 }
 
@@ -390,7 +413,7 @@ a#contact.bm-item.menu-item:focus-within {
 
 @media (min-width: 500px) and (max-width: 989px) {
   .fas.fa-search {
-    left: 90%;
+    left: 75%;
     position: absolute;
     top: 25%;
   }
