@@ -125,8 +125,8 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 .img-responsive {
-  height: auto;
-  width: 100%;
+  // height: auto;
+  // width: 100%;
 }
 
 .contents {
@@ -498,5 +498,16 @@ a#contact.bm-item.menu-item:focus-within {
 @media (min-width: 769px) and (max-width: 5000px) {
   .ham-menu {
     display: none;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 444px) {
+  .img-responsive {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+  .main-header-padding {
+    padding: 0px;
   }
 }
