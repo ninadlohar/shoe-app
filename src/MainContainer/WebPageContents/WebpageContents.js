@@ -18,7 +18,7 @@ import Footer from "./Footer/Footer";
 const WebPageContents = () => {
   return (
     <div>
-      <Logo />
+      {/* <Logo /> */}
       {/* <RightNavbar /> */}
       {/* <InputBox /> */}
       <Header />
