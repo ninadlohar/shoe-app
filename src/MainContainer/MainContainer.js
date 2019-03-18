@@ -32,7 +32,7 @@ class MainContainer extends React.Component {
         navbarLogo.style.display = "block";
         navbarLogo.classList.add = style1;
       }
-      if (top < 101) {
+      if (top < 151) {
         navbarLogo.style.display = "none";
         nav.style.backgroundColor = "transparent";
         nav.style.transition = "all 0.5s";
