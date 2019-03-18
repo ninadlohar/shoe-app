@@ -27,10 +27,11 @@ export default class Example extends React.Component {
     return (
       <div className="navbar-at-right" id="navbar-at-right">
         <Navbar light expand="md">
-          <NavbarBrand href="/">
+          <NavbarBrand href="/" id="navbar-brand">
             <img
+              id="nav-b"
               src={require("../../../assets/on-my-feet.png")}
-              height="40px"
+              className="nav-b"
             />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />

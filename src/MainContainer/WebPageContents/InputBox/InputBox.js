@@ -28,7 +28,9 @@ class InputBox extends React.Component {
       <div className="drop-Down">
         <div>
           <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-            <DropdownToggle caret>Sizes</DropdownToggle>
+            <DropdownToggle>
+              Sizes <i className="fas fa-angle-down" />
+            </DropdownToggle>
             <DropdownMenu>
               <DropdownItem className="show-hide-items">
                 Show/Hide Intermediate Sizes

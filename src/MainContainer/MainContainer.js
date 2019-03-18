@@ -18,11 +18,19 @@ class MainContainer extends React.Component {
     const w = window;
     w.addEventListener("scroll", function(event) {
       var top = this.scrollY;
+      var nav_brand = document.getElementById("nav-b");
       var nav = document.getElementById("navbar-at-right");
+      var mainLogo = document.getElementById("logo");
       if (top > 200) {
         nav.style.backgroundColor = "black";
         nav.style.transition = "all 0.5s";
+        mainLogo.style.display = "none";
+        nav_brand.style.opacity = 1;
       }
+      // if (top > 200) {
+      //   nav_brand.style.opacity = 1;
+      //   nav.style.transition = "all 0.5s";
+      // }
     });
   }
   /** js code */

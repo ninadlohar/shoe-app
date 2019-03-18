@@ -3,7 +3,7 @@ import "../../global.scss";
 
 const Logo = () => {
   return (
-    <div className="logo">
+    <div className="logo" id="logo">
       <img
         src={require("../../../assets/on-my-feet.png")}
         alt="brand-logo"

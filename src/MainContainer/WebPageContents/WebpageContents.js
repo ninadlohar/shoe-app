@@ -7,6 +7,7 @@ import CategoryImagesFixed from "./CategoryImagesFixed/CategoryImagesFixed";
 import UpComingReleasesHeader from "./UpcomingReleasesHeader/UpcomingReleasesHeader";
 import UpcomingReleasesRowSlider from "./UpcomingReleasesRowSlider/UpcomingReleasesRowSlider";
 import Deals from "./Deals/Deals";
+import Logo from "./Logo/Logo";
 import DealsHeader from "./DealsHeader/DealsHeader";
 import BrandsHeader from "./BrandsHeader/BrandsHeader";
 import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
@@ -15,6 +16,7 @@ import Footer from "./Footer/Footer";
 const WebPageContents = () => {
   return (
     <div>
+      <Logo />
       <Header />
       <Trending />
       <FirstRowCardScroll />
