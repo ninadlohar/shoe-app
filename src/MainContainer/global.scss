@@ -2,6 +2,10 @@
   display: none;
 }
 
+.bg-color {
+  background-color: red;
+}
+
 .logo {
   position: absolute;
   top: 0;
@@ -485,6 +489,9 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
+  .logo {
+    display: none !important;
+  }
   .nav-item {
     font-weight: bold;
   }
@@ -558,4 +565,13 @@ a#contact.bm-item.menu-item:focus-within {
     width: 100%;
     object-fit: contain;
   }
+}
+.scrollToBtm {
+  width: auto;
+  position: absolute;
+  top: -100%;
+  transition: all 0.5s;
+}
+.scrollToBtm.active {
+  top: 20%;
 }

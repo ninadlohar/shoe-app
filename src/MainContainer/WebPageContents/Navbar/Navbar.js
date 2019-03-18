@@ -31,7 +31,7 @@ export default class Example extends React.Component {
             <img
               id="nav-b"
               src={require("../../../assets/on-my-feet.png")}
-              className="nav-b"
+              className="nav-b scrollToBtm"
               height="40px"
             />
           </NavbarBrand>

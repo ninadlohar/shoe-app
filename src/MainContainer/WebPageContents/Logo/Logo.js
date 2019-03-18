@@ -4,11 +4,13 @@ import "../../global.scss";
 const Logo = () => {
   return (
     <div className="logo" id="logo">
-      <img
-        src={require("../../../assets/on-my-feet.png")}
-        alt="brand-logo"
-        height="70px"
-      />
+      <div>
+        <img
+          src={require("../../../assets/on-my-feet.png")}
+          alt="brand-logo"
+          height="70px"
+        />
+      </div>
     </div>
   );
 };
