@@ -9,14 +9,14 @@ const CategoryImagesFixed = () => {
     <div className="cat-images">
       <Col md="12" sm="12" lg="12" xl="12" sm="12">
         <Row className="nomargin">
-          <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center">
+          <Col sm="12" xs="12" md="12" lg="12" xl="4" className="al-it-center">
             <img
               src={require("../../../assets/cat1.png")}
               alt="cat1"
               className="img-responsive"
             />
           </Col>
-          <Col sm="12" xs="12" md="6" lg="4" xl="4" className="al-it-center ">
+          <Col sm="12" xs="12" md="12" lg="12" xl="4" className="al-it-center ">
             <img
               src={require("../../../assets/cat2.png")}
               alt="cat2"
@@ -26,8 +26,8 @@ const CategoryImagesFixed = () => {
           <Col
             sm="12"
             xs="12"
-            md="6"
-            lg="4"
+            md="12"
+            lg="12"
             xl="4"
             className="al-it-center img-responsive"
           >
