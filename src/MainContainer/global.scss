@@ -10,7 +10,8 @@
 }
 
 #nav-b {
-  opacity: 0;
+  display: none;
+  // opacity: 0;
 }
 
 .nav-item {
@@ -385,6 +386,11 @@ a#contact.bm-item.menu-item:focus-within {
   font-size: 12px !important;
   font-family: "Poppins", sans-serif;
   color: white !important;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 0.5rem !important;
 }
 
 .bg-light {
