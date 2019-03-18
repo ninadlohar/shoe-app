@@ -2,6 +2,23 @@
   display: none;
 }
 
+.slick-next {
+  // right: 1%;
+  height: 100%;
+  justify-content: center;
+  display: flex !important;
+  position: absolute;
+  align-items: center;
+}
+.slick-prev {
+  // left: 1%;
+  height: 100%;
+  display: flex !important;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
 .ham-menu {
   width: 100%;
 }
@@ -128,12 +145,6 @@ a#contact.bm-item.menu-item:focus-within {
   padding-right: 0px !important;
 }
 
-.img-responsive {
-  // height: auto;
-  // width: 100%;
-  // object-fit: contain;
-}
-
 .contents {
   width: 100%;
   display: flex;
@@ -147,8 +158,7 @@ a#contact.bm-item.menu-item:focus-within {
   display: inline-flex !important;
   justify-content: center;
   img {
-    height: 130px;
-    width: 240px;
+    object-fit: contain;
   }
 }
 
@@ -231,49 +241,13 @@ a#contact.bm-item.menu-item:focus-within {
   padding: 0.3rem 0;
 }
 
-.slick-next:before,
-.slick-prev:before {
-  font-size: 15px !important;
-  line-height: 1;
-  color: #3e3e3e;
-}
-
-.slick-arrow.slick-prev {
-  background: white !important;
-  top: -10px;
-  left: 91%;
-  color: rgb(84, 84, 84);
-}
-.slick-arrow.slick-next {
-  background: white !important;
-  top: -10px;
-  left: 92%;
-  color: rgb(84, 84, 84);
-}
-
-.slick-arrow.slick-next::before {
-  background: white;
-  top: -10px;
-  left: 92%;
-  color: rgb(84, 84, 84);
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-family: "";
-  font-size: 20px;
-  line-height: 1;
-  color: #3e3e3e;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .cat-images {
   display: flex;
 
   img {
-    // width: 320px;
+    width: 320px;
     height: 220px;
+    // object-fit: contain;
   }
 }
 
@@ -306,8 +280,9 @@ a#contact.bm-item.menu-item:focus-within {
   justify-content: center;
   // padding: 8px;
   img {
-    height: 280px;
-    width: 250px;
+    // height: 280px;
+    // width: 250px;
+    object-fit: contain;
   }
 }
 
@@ -315,8 +290,7 @@ a#contact.bm-item.menu-item:focus-within {
   display: inline-flex !important;
   justify-content: center;
   img {
-    height: 180px;
-    width: 250px;
+    object-fit: contain;
   }
 }
 
@@ -349,15 +323,6 @@ a#contact.bm-item.menu-item:focus-within {
 .main-header-padding {
   padding: 16px 220px;
 }
-
-// .logo {
-//   width: 60px;
-//   left: 0;
-//   top: 0;
-//   position: absolute;
-//   height: 30px;
-//   margin: 30px;
-// }
 
 .navbar-at-right {
   top: 0;
@@ -418,9 +383,7 @@ a#contact.bm-item.menu-item:focus-within {
     position: absolute;
     top: 25%;
   }
-  .slick-arrow.slick-prev {
-    left: 89% !important;
-  }
+
   .dropdown-item {
     padding: 0.25rem 1rem;
   }

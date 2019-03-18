@@ -1,6 +1,4 @@
 import React from "react";
-import RightNavbar from "./Navbar/Navbar";
-import Logo from "./Logo/Logo";
 import Header from "./Header/Header";
 import Trending from "./Trending/Treding";
 import CategoriesHeader from "./CategoriesHeader/CategoriesHeader";
@@ -11,16 +9,12 @@ import UpcomingReleasesRowSlider from "./UpcomingReleasesRowSlider/UpcomingRelea
 import Deals from "./Deals/Deals";
 import DealsHeader from "./DealsHeader/DealsHeader";
 import BrandsHeader from "./BrandsHeader/BrandsHeader";
-import InputBox from "./InputBox/InputBox";
 import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
 import Footer from "./Footer/Footer";
 
 const WebPageContents = () => {
   return (
     <div>
-      {/* <Logo /> */}
-      {/* <RightNavbar /> */}
-      {/* <InputBox /> */}
       <Header />
       <Trending />
       <FirstRowCardScroll />

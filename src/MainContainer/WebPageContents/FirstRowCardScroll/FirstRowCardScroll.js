@@ -13,8 +13,6 @@ class FirstRowCardScroll extends React.Component {
             ...style,
             display: "block",
             background: "#545454",
-            top: -10,
-            left: "95%",
             color: "#545454"
           }}
           onClick={onClick}
@@ -31,8 +29,6 @@ class FirstRowCardScroll extends React.Component {
             ...style,
             display: "block",
             background: "#545454",
-            top: -10,
-            left: "92%",
             color: "#545454"
           }}
           onClick={onClick}
@@ -50,15 +46,6 @@ class FirstRowCardScroll extends React.Component {
         {
           breakpoint: 1800,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 1064,
-          settings: {
             slidesToShow: 3,
             slidesToScroll: 2,
             infinite: true,
@@ -66,19 +53,20 @@ class FirstRowCardScroll extends React.Component {
           }
         },
         {
-          breakpoint: 800,
+          breakpoint: 1360,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            initialSlide: 2,
+            infinite: true,
             dots: false
           }
         },
         {
-          breakpoint: 550,
+          breakpoint: 942,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
+            initialSlide: 2,
             dots: false
           }
         }
