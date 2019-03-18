@@ -13,6 +13,19 @@ class MainContainer extends React.Component {
   closeMenu() {
     this.setState({ menuOpen: false });
   }
+  /** js code */
+  componentWillMount() {
+    const w = window;
+    w.addEventListener("scroll", function(event) {
+      var top = this.scrollY;
+      var nav = document.getElementById("navbar-at-right");
+      if (top > 200) {
+        nav.style.backgroundColor = "black";
+        nav.style.transition = "all 0.5s";
+      }
+    });
+  }
+  /** js code */
   render() {
     return (
       <div id="outer-container">

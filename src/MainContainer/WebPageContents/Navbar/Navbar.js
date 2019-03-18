@@ -29,7 +29,7 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <div className="navbar-at-right">
+      <div className="navbar-at-right" id="navbar-at-right">
         <Navbar light expand="md">
           <NavbarBrand href="/" />
           <NavbarToggler onClick={this.toggle} />
