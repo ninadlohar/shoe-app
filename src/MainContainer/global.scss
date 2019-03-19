@@ -1,3 +1,52 @@
+/** mic testing **/
+.test2 {
+  width: 100%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 100%;
+  transition: 0.2s;
+  visibility: hidden;
+}
+.shoe-card:hover .test2 {
+  transition: 0.2s;
+  top: 0%;
+  visibility: visible;
+}
+.available {
+  color: #a5a5a5;
+}
+.shops-13 {
+  color: black;
+  font-weight: bold;
+}
+.s1,
+.s2,
+.s3 {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+.pd8 {
+  padding: 6px;
+  margin-left: 16px;
+  text-align: left;
+  font-weight: 900;
+}
+.massive-padding {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 250px;
+}
+.sh {
+  font-weight: 900;
+}
+.sh1 {
+  font-weight: 900;
+  text-align: right;
+}
+
+/** mic testing **/
+
 .slick-dots {
   display: none;
 }
@@ -318,6 +367,8 @@ a#contact.bm-item.menu-item:focus-within {
 .shoe-card {
   display: inline-flex !important;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
   // padding: 8px;
   img {
     // height: 280px;

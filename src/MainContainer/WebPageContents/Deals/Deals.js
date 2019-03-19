@@ -80,6 +80,7 @@ class FirstRowCardScroll extends React.Component {
               src={require("../../../assets/d1-offer.png")}
               alt="black-nike-shoe"
             />
+            <div>Hey</div>
           </div>
           <div className="shoe-card">
             <img
