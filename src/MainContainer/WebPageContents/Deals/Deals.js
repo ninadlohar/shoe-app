@@ -77,40 +77,239 @@ class FirstRowCardScroll extends React.Component {
         <Slider {...settings}>
           <div className="shoe-card">
             <img
-              src={require("../../../assets/d1-offer.png")}
+              src={require("../../../assets/black.png")}
               alt="black-nike-shoe"
             />
-            <div>Hey</div>
           </div>
-          <div className="shoe-card">
-            <img
-              src={require("../../../assets/d1-offer.png")}
-              alt="nike-shoe"
-            />
+          <div className="main-shoe-card">
+            <div className="shoe-card">
+              <div className="actual-img-shoe-card">
+                <img
+                  src={require("../../../assets/shoe.png")}
+                  alt="nike-shoe"
+                  className="shoe-card-img"
+                />
+                <div className="test2">
+                  <div className="col-12">
+                    <div className="row">
+                      <div className="col-12 massive-padding">
+                        <div className="row">
+                          <div className="col-6 sh">ULTRA SHOE LTD</div>
+                          <div className="col-6 sh1">EU/ UK/ US</div>
+                        </div>
+                        <div className="size-list">
+                          <div className="s1">
+                            <div className="pd8">36</div>
+                            <div className="pd8">37</div>
+                            <div className="pd8">38</div>
+                            <div className="pd8">39</div>
+                            <div className="pd8">40</div>
+                            <div className="pd8">41</div>
+                          </div>
+                          <div className="s2">
+                            <div className="pd8">42</div>
+                            <div className="pd8">43</div>
+                            <div className="pd8">44</div>
+                            <div className="pd8">45</div>
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
+                          </div>
+                          <div className="s3">
+                            <div className="pd8">48</div>
+                            <div className="pd8">49</div>
+                            <div className="pd8">50</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="shoe-card">
-            <img
-              src={require("../../../assets/d1-offer.png")}
-              alt="nike-shoe"
-            />
+          <div className="main-shoe-card">
+            <div className="shoe-card">
+              <div className="actual-img-shoe-card">
+                <img
+                  src={require("../../../assets/shoe.png")}
+                  alt="nike-shoe"
+                  className="shoe-card-img"
+                />
+                <div className="test2">
+                  <div className="col-12">
+                    <div className="row">
+                      <div className="col-12 massive-padding">
+                        <div className="row">
+                          <div className="col-6 sh">ULTRA SHOE LTD</div>
+                          <div className="col-6 sh1">EU/ UK/ US</div>
+                        </div>
+                        <div className="size-list">
+                          <div className="s1">
+                            <div className="pd8">36</div>
+                            <div className="pd8">37</div>
+                            <div className="pd8">38</div>
+                            <div className="pd8">39</div>
+                            <div className="pd8">40</div>
+                            <div className="pd8">41</div>
+                          </div>
+                          <div className="s2">
+                            <div className="pd8">42</div>
+                            <div className="pd8">43</div>
+                            <div className="pd8">44</div>
+                            <div className="pd8">45</div>
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
+                          </div>
+                          <div className="s3">
+                            <div className="pd8">48</div>
+                            <div className="pd8">49</div>
+                            <div className="pd8">50</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="shoe-card">
-            <img
-              src={require("../../../assets/d1-offer.png")}
-              alt="nike-shoe"
-            />
+          <div className="main-shoe-card">
+            <div className="shoe-card">
+              <div className="actual-img-shoe-card">
+                <img
+                  src={require("../../../assets/shoe.png")}
+                  alt="nike-shoe"
+                  className="shoe-card-img"
+                />
+                <div className="test2">
+                  <div className="col-12">
+                    <div className="row">
+                      <div className="col-12 massive-padding">
+                        <div className="row">
+                          <div className="col-6 sh">ULTRA SHOE LTD</div>
+                          <div className="col-6 sh1">EU/ UK/ US</div>
+                        </div>
+                        <div className="size-list">
+                          <div className="s1">
+                            <div className="pd8">36</div>
+                            <div className="pd8">37</div>
+                            <div className="pd8">38</div>
+                            <div className="pd8">39</div>
+                            <div className="pd8">40</div>
+                            <div className="pd8">41</div>
+                          </div>
+                          <div className="s2">
+                            <div className="pd8">42</div>
+                            <div className="pd8">43</div>
+                            <div className="pd8">44</div>
+                            <div className="pd8">45</div>
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
+                          </div>
+                          <div className="s3">
+                            <div className="pd8">48</div>
+                            <div className="pd8">49</div>
+                            <div className="pd8">50</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="shoe-card">
-            <img
-              src={require("../../../assets/d1-offer.png")}
-              alt="nike-shoe"
-            />
+          <div className="main-shoe-card">
+            <div className="shoe-card">
+              <div className="actual-img-shoe-card">
+                <img
+                  src={require("../../../assets/shoe.png")}
+                  alt="nike-shoe"
+                  className="shoe-card-img"
+                />
+                <div className="test2">
+                  <div className="col-12">
+                    <div className="row">
+                      <div className="col-12 massive-padding">
+                        <div className="row">
+                          <div className="col-6 sh">ULTRA SHOE LTD</div>
+                          <div className="col-6 sh1">EU/ UK/ US</div>
+                        </div>
+                        <div className="size-list">
+                          <div className="s1">
+                            <div className="pd8">36</div>
+                            <div className="pd8">37</div>
+                            <div className="pd8">38</div>
+                            <div className="pd8">39</div>
+                            <div className="pd8">40</div>
+                            <div className="pd8">41</div>
+                          </div>
+                          <div className="s2">
+                            <div className="pd8">42</div>
+                            <div className="pd8">43</div>
+                            <div className="pd8">44</div>
+                            <div className="pd8">45</div>
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
+                          </div>
+                          <div className="s3">
+                            <div className="pd8">48</div>
+                            <div className="pd8">49</div>
+                            <div className="pd8">50</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="shoe-card">
-            <img
-              src={require("../../../assets/d1-offer.png")}
-              alt="nike-shoe"
-            />
+          <div className="main-shoe-card">
+            <div className="shoe-card">
+              <div className="actual-img-shoe-card">
+                <img
+                  src={require("../../../assets/shoe.png")}
+                  alt="nike-shoe"
+                  className="shoe-card-img"
+                />
+                <div className="test2">
+                  <div className="col-12">
+                    <div className="row">
+                      <div className="col-12 massive-padding">
+                        <div className="row">
+                          <div className="col-6 sh">ULTRA SHOE LTD</div>
+                          <div className="col-6 sh1">EU/ UK/ US</div>
+                        </div>
+                        <div className="size-list">
+                          <div className="s1">
+                            <div className="pd8">36</div>
+                            <div className="pd8">37</div>
+                            <div className="pd8">38</div>
+                            <div className="pd8">39</div>
+                            <div className="pd8">40</div>
+                            <div className="pd8">41</div>
+                          </div>
+                          <div className="s2">
+                            <div className="pd8">42</div>
+                            <div className="pd8">43</div>
+                            <div className="pd8">44</div>
+                            <div className="pd8">45</div>
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
+                          </div>
+                          <div className="s3">
+                            <div className="pd8">48</div>
+                            <div className="pd8">49</div>
+                            <div className="pd8">50</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </Slider>
       </div>
