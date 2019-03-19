@@ -1,8 +1,6 @@
 import React from "react";
 import "../../global.scss";
 import Slider from "react-slick";
-import { Container, Row, Col } from "reactstrap";
-
 class FirstRowCardScroll extends React.Component {
   render() {
     function SampleNextArrow(props) {

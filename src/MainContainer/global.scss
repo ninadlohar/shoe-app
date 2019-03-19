@@ -64,6 +64,11 @@
   align-items: center;
 }
 
+#log {
+  transition: all 0.8s;
+  // transform: translate(-18px, 20px);
+}
+
 .slick-dots {
   display: none;
 }
@@ -76,6 +81,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.2s;
   margin: 32px;
 }
 

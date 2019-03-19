@@ -9,6 +9,7 @@ const Logo = () => {
           src={require("../../../assets/on-my-feet.png")}
           alt="brand-logo"
           height="70px"
+          id="log"
         />
       </div>
     </div>
