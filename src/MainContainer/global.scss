@@ -2,12 +2,13 @@
 .test2 {
   width: 100%;
   left: 0%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 100%;
   transition: 0.2s;
   visibility: hidden;
 }
+
 .shoe-card:hover .test2 {
   transition: 0.2s;
   top: 0%;
@@ -24,14 +25,22 @@
 .s2,
 .s3 {
   display: flex;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
 }
+
 .pd8 {
   padding: 6px;
   margin-left: 16px;
   text-align: left;
   font-weight: 900;
 }
+
+.pd8:active {
+  background-color: black;
+  color: white;
+}
+
 .massive-padding {
   padding-left: 60px;
   padding-right: 60px;
@@ -39,13 +48,21 @@
 }
 .sh {
   font-weight: 900;
+  text-align: center;
 }
 .sh1 {
   font-weight: 900;
-  text-align: right;
+  text-align: center;
 }
 
 /** mic testing **/
+
+.main-shoe-card {
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 
 .slick-dots {
   display: none;
