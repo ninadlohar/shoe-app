@@ -286,9 +286,10 @@ a#contact.bm-item.menu-item {
 
 a#contact.bm-item.menu-item:active {
   color: white;
+  background-color: black;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .fas.fa-search {
@@ -364,9 +365,9 @@ a#contact.bm-item.menu-item:focus-within {
   }
 }
 
-.brand-card:hover {
-  box-shadow: 1px 1px 1px 1px #d4d4d4;
-}
+// .brand-card:hover {
+//   box-shadow: 1px 1px 1px 1px #d4d4d4;
+// }
 
 .footer-contents {
   position: absolute;
@@ -483,10 +484,6 @@ a#contact.bm-item.menu-item:focus-within {
     width: 100%;
     object-fit: contain;
   }
-}
-
-.up-rel-card:hover {
-  border: 1px solid grey;
 }
 
 .up-rel-card:before {
