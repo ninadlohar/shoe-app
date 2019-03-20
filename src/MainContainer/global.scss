@@ -6,14 +6,14 @@
 .cat-card-hover-clone {
   width: 100%;
   left: 0%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   position: absolute;
   top: 100%;
   transition: 0.2s;
   visibility: hidden;
 }
 .cat-card:hover .cat-card-hover-clone {
-  transition: 0.4s;
+  transition: 0.2s;
   top: 95%;
   visibility: visible;
 }
@@ -37,10 +37,16 @@
 
 /** extra div that is hidden and only pops out when hover on shoe-card **/
 /** hidden div called test */
+.actual-img-shoe-card {
+  box-shadow: 2px 10px 10px 5px #cfcfcf;
+  // box-shadow: 2px 0px 5px 2px rgba(207, 207, 207, 1);
+}
+
 .test2 {
   width: 100%;
   left: 0%;
   background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 5px 2px rgba(247, 247, 247, 1);
   position: absolute;
   top: 100%;
   transition: 0.4s;
