@@ -1,11 +1,49 @@
-/** mic testing **/
+/** category card */
+.cat-card {
+  position: relative;
+  // overflow: hidden;
+}
+.cat-card-hover-clone {
+  width: 100%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 100%;
+  transition: 0.2s;
+  visibility: hidden;
+}
+.cat-card:hover .cat-card-hover-clone {
+  transition: 0.4s;
+  top: 95%;
+  visibility: visible;
+}
+._shoes_white_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+._shoes {
+  width: 70%;
+  box-shadow: 0px 2px 5px 0px rgba(225, 225, 225, 1);
+  letter-spacing: 0.7px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 10px 0px;
+}
+/** category card*/
+
+/** extra div that is hidden and only pops out when hover on shoe-card **/
+/** hidden div called test */
 .test2 {
   width: 100%;
   left: 0%;
   background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 100%;
-  transition: 0.2s;
+  transition: 0.4s;
   visibility: hidden;
 }
 
@@ -55,7 +93,7 @@
   text-align: center;
 }
 
-/** mic testing **/
+/** extra div that is hidden and only pops out when hover on shoe-card **/
 
 .main-shoe-card {
   width: 100%;
@@ -558,7 +596,7 @@ a#contact.bm-item.menu-item:focus-within {
   .al-it-center {
     text-align: center;
     // padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 36px;
   }
 }
 
@@ -606,7 +644,7 @@ a#contact.bm-item.menu-item:focus-within {
   .al-it-center {
     text-align: center;
     // padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 36px;
   }
 }
 
