@@ -118,6 +118,10 @@
 
 /** dropdown on active ends */
 
+#outer-container {
+  overflow: hidden !important;
+}
+
 .main-shoe-card {
   width: 100%;
   display: flex !important;
@@ -200,7 +204,7 @@
   height: 60px;
   background-color: black;
   position: fixed;
-  z-index: 1;
+  z-index: 6;
 }
 
 .s1,
@@ -564,6 +568,16 @@ a#contact.bm-item.menu-item:focus-within {
 @media (min-width: 200px) and (max-width: 499px) {
   .main-header-padding {
     padding: 16px 0px;
+  }
+  .up-rel-card {
+    img {
+      height: 100%;
+    }
+  }
+  .brand-card {
+    img {
+      height: 100%;
+    }
   }
   .massive-padding {
     padding-left: 60px;
