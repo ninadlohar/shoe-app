@@ -81,11 +81,11 @@ class FirstRowCardScroll extends React.Component {
               alt="black-nike-shoe"
             />
           </div>
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
+          <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
+          <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
+          <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
+          <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
+          <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
         </Slider>
       </div>
     );

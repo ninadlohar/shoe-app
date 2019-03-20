@@ -77,11 +77,11 @@ class FirstRowCardScroll extends React.Component {
     return (
       <div className="first-row-card-scroll-padding-l-r">
         <Slider {...settings}>
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
-          <Shoe set={this.props.set} />
+          <Shoe set={this.props.set} shoe={this.props.OfferShoe} />
+          <Shoe set={this.props.set} shoe={this.props.OfferShoe} />
+          <Shoe set={this.props.set} shoe={this.props.OfferShoe} />
+          <Shoe set={this.props.set} shoe={this.props.OfferShoe} />
+          <Shoe set={this.props.set} shoe={this.props.OfferShoe} />
         </Slider>
       </div>
     );

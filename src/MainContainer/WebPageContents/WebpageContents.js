@@ -12,6 +12,8 @@ import DealsHeader from "./DealsHeader/DealsHeader";
 import BrandsHeader from "./BrandsHeader/BrandsHeader";
 import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
 import Footer from "./Footer/Footer";
+import OfferShoe from "../../assets/d1-offer.png";
+import NikeShoe from "../../assets/shoe.png";
 
 const WebPageContents = () => {
   const set = {
@@ -25,7 +27,7 @@ const WebPageContents = () => {
       <Logo />
       <Header />
       <Trending />
-      <FirstRowCardScroll set={set} />
+      <FirstRowCardScroll set={set} NikeShoe={NikeShoe} />
       <CategoriesHeader />
       <CategoryImagesFixed />
       <BrandsHeader />
@@ -33,7 +35,7 @@ const WebPageContents = () => {
       <UpComingReleasesHeader />
       <UpcomingReleasesRowSlider />
       <DealsHeader />
-      <Deals set={set} />
+      <Deals set={set} OfferShoe={OfferShoe} />
       <Footer />
     </div>
   );

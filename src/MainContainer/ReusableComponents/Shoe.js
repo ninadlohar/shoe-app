@@ -8,7 +8,11 @@ class Shoe extends React.Component {
       <div className="main-shoe-card">
         <div className="shoe-card">
           <div className="actual-img-shoe-card">
-            <img src={OfferImage} alt="nike-shoe" className="shoe-card-img" />
+            <img
+              src={this.props.shoe}
+              alt="nike-shoe"
+              className="shoe-card-img"
+            />
             <div className="test2">
               <div className="col-12">
                 <div className="row">
