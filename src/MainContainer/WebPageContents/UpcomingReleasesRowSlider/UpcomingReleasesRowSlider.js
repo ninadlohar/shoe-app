@@ -53,7 +53,7 @@ class UpcomingReleasesRowSlider extends React.Component {
           }
         },
         {
-          breakpoint: 1360,
+          breakpoint: 1527,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
