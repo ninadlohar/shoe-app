@@ -11,6 +11,7 @@
   top: 100%;
   transition: 0.2s;
   visibility: hidden;
+  cursor: pointer;
 }
 .cat-card:hover .cat-card-hover-clone {
   transition: 0.2s;
@@ -99,7 +100,23 @@
   text-align: center;
 }
 
-/** extra div that is hidden and only pops out when hover on shoe-card **/
+/** extra div that is hidden and only pops out when hover on shoe-card ends **/
+
+/** dropdown on active starts */
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: black;
+  text-decoration: none;
+  background-color: white !important;
+  outline: none;
+}
+
+.size-list {
+  color: black;
+}
+
+/** dropdown on active ends */
 
 .main-shoe-card {
   width: 100%;
@@ -160,6 +177,12 @@
   align-items: center !important;
   z-index: 1 !important;
 }
+
+.slick-arrow.slick-next:active,
+.slick-arrow.slick-prev:active {
+  background: rgba(84, 84, 84, 0.9) !important;
+}
+
 .slick-arrow.slick-prev {
   display: block;
   background: rgba(84, 84, 84, 0.4) !important;
