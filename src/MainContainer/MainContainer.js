@@ -21,27 +21,28 @@ class MainContainer extends React.Component {
       var top = this.scrollY;
       var actualLogo = document.getElementById("logo");
       var navbarLogo = document.getElementById("nav-b");
+      var navbarLogoParent = document.getElementById("lo");
       var nav = document.getElementById("navbar-at-right");
-      if (w.scrollY > 60) {
+      if (w.scrollY > 40) {
         nav.style.backgroundColor = "black";
         nav.style.transition = "all 0.5s";
         navbarLogo.style.display = "block";
         navbarLogo.classList.add("active");
       }
-      window.onscroll = function() {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 40 ||
-          document.documentElement.scrollTop > 40
-        ) {
-          document.getElementById("log").style.transition = "all 0.8s";
-          document.getElementById("log").style.transform =
-            "translate(-18px, -20px)";
-          document.getElementById("log").style.transform = "scale(0.6, 0.6)";
-        }
-      }
+      // window.onscroll = function() {
+      //   scrollFunction();
+      // };
+      // function scrollFunction() {
+      //   if (
+      //     document.body.scrollTop > 40 ||
+      //     document.documentElement.scrollTop > 40
+      //   ) {
+      //     document.getElementById("log").style.transition = "all 2s";
+      //     navbarLogoParent.style.transform =
+      //       "translate(-62px,-28px)"; /** if minus goes left(-58px) */
+      //     document.getElementById("log").style.transform = "scale(0.6, 0.6)";
+      //   }
+      // }
       if (top < 51) {
         nav.style.backgroundColor = "transparent";
         nav.style.transition = "all 0.5s";
@@ -50,6 +51,7 @@ class MainContainer extends React.Component {
       }
     });
   }
+
   /** js code */
   render() {
     return (

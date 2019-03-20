@@ -47,7 +47,7 @@ class UpcomingReleasesRowSlider extends React.Component {
           breakpoint: 958,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             initialSlide: 2,
             dots: false
           }
@@ -56,7 +56,7 @@ class UpcomingReleasesRowSlider extends React.Component {
           breakpoint: 1360,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             infinite: true,
             dots: false
           }
