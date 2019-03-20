@@ -22,7 +22,9 @@ class MainContainer extends React.Component {
       var actualLogo = document.getElementById("logo");
       var navbarLogo = document.getElementById("nav-b");
       var navbarLogoParent = document.getElementById("lo");
+
       var nav = document.getElementById("navbar-at-right");
+      console.log(nav.offsetHeight);
       if (w.scrollY > 40) {
         nav.style.backgroundColor = "black";
         nav.style.transition = "all 0.5s";

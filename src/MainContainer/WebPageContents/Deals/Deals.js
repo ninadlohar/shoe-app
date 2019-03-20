@@ -75,17 +75,11 @@ class FirstRowCardScroll extends React.Component {
     return (
       <div className="first-row-card-scroll-padding-l-r">
         <Slider {...settings}>
-          <div className="shoe-card">
-            <img
-              src={require("../../../assets/black.png")}
-              alt="black-nike-shoe"
-            />
-          </div>
           <div className="main-shoe-card">
             <div className="shoe-card">
               <div className="actual-img-shoe-card">
                 <img
-                  src={require("../../../assets/shoe.png")}
+                  src={require("../../../assets/d1-offer.png")}
                   alt="nike-shoe"
                   className="shoe-card-img"
                 />
@@ -104,17 +98,17 @@ class FirstRowCardScroll extends React.Component {
                             <div className="pd8">38</div>
                             <div className="pd8">39</div>
                             <div className="pd8">40</div>
-                            <div className="pd8">41</div>
                           </div>
                           <div className="s2">
+                            <div className="pd8">41</div>
                             <div className="pd8">42</div>
                             <div className="pd8">43</div>
                             <div className="pd8">44</div>
                             <div className="pd8">45</div>
-                            <div className="pd8">46</div>
-                            <div className="pd8">47</div>
                           </div>
                           <div className="s3">
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
                             <div className="pd8">48</div>
                             <div className="pd8">49</div>
                             <div className="pd8">50</div>
@@ -131,7 +125,7 @@ class FirstRowCardScroll extends React.Component {
             <div className="shoe-card">
               <div className="actual-img-shoe-card">
                 <img
-                  src={require("../../../assets/shoe.png")}
+                  src={require("../../../assets/d1-offer.png")}
                   alt="nike-shoe"
                   className="shoe-card-img"
                 />
@@ -150,17 +144,17 @@ class FirstRowCardScroll extends React.Component {
                             <div className="pd8">38</div>
                             <div className="pd8">39</div>
                             <div className="pd8">40</div>
-                            <div className="pd8">41</div>
                           </div>
                           <div className="s2">
+                            <div className="pd8">41</div>
                             <div className="pd8">42</div>
                             <div className="pd8">43</div>
                             <div className="pd8">44</div>
                             <div className="pd8">45</div>
-                            <div className="pd8">46</div>
-                            <div className="pd8">47</div>
                           </div>
                           <div className="s3">
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
                             <div className="pd8">48</div>
                             <div className="pd8">49</div>
                             <div className="pd8">50</div>
@@ -177,7 +171,7 @@ class FirstRowCardScroll extends React.Component {
             <div className="shoe-card">
               <div className="actual-img-shoe-card">
                 <img
-                  src={require("../../../assets/shoe.png")}
+                  src={require("../../../assets/d1-offer.png")}
                   alt="nike-shoe"
                   className="shoe-card-img"
                 />
@@ -196,17 +190,17 @@ class FirstRowCardScroll extends React.Component {
                             <div className="pd8">38</div>
                             <div className="pd8">39</div>
                             <div className="pd8">40</div>
-                            <div className="pd8">41</div>
                           </div>
                           <div className="s2">
+                            <div className="pd8">41</div>
                             <div className="pd8">42</div>
                             <div className="pd8">43</div>
                             <div className="pd8">44</div>
                             <div className="pd8">45</div>
-                            <div className="pd8">46</div>
-                            <div className="pd8">47</div>
                           </div>
                           <div className="s3">
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
                             <div className="pd8">48</div>
                             <div className="pd8">49</div>
                             <div className="pd8">50</div>
@@ -223,7 +217,7 @@ class FirstRowCardScroll extends React.Component {
             <div className="shoe-card">
               <div className="actual-img-shoe-card">
                 <img
-                  src={require("../../../assets/shoe.png")}
+                  src={require("../../../assets/d1-offer.png")}
                   alt="nike-shoe"
                   className="shoe-card-img"
                 />
@@ -242,17 +236,17 @@ class FirstRowCardScroll extends React.Component {
                             <div className="pd8">38</div>
                             <div className="pd8">39</div>
                             <div className="pd8">40</div>
-                            <div className="pd8">41</div>
                           </div>
                           <div className="s2">
+                            <div className="pd8">41</div>
                             <div className="pd8">42</div>
                             <div className="pd8">43</div>
                             <div className="pd8">44</div>
                             <div className="pd8">45</div>
-                            <div className="pd8">46</div>
-                            <div className="pd8">47</div>
                           </div>
                           <div className="s3">
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
                             <div className="pd8">48</div>
                             <div className="pd8">49</div>
                             <div className="pd8">50</div>
@@ -269,7 +263,7 @@ class FirstRowCardScroll extends React.Component {
             <div className="shoe-card">
               <div className="actual-img-shoe-card">
                 <img
-                  src={require("../../../assets/shoe.png")}
+                  src={require("../../../assets/d1-offer.png")}
                   alt="nike-shoe"
                   className="shoe-card-img"
                 />
@@ -288,17 +282,17 @@ class FirstRowCardScroll extends React.Component {
                             <div className="pd8">38</div>
                             <div className="pd8">39</div>
                             <div className="pd8">40</div>
-                            <div className="pd8">41</div>
                           </div>
                           <div className="s2">
+                            <div className="pd8">41</div>
                             <div className="pd8">42</div>
                             <div className="pd8">43</div>
                             <div className="pd8">44</div>
                             <div className="pd8">45</div>
-                            <div className="pd8">46</div>
-                            <div className="pd8">47</div>
                           </div>
                           <div className="s3">
+                            <div className="pd8">46</div>
+                            <div className="pd8">47</div>
                             <div className="pd8">48</div>
                             <div className="pd8">49</div>
                             <div className="pd8">50</div>
