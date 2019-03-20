@@ -14,12 +14,18 @@ import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
 import Footer from "./Footer/Footer";
 
 const WebPageContents = () => {
+  const set = {
+    set1: [36, 37, 38, 39, 40],
+    set2: [41, 42, 43, 44, 45],
+    set3: [46, 47, 48, 49, 50]
+  };
+
   return (
     <div>
       <Logo />
       <Header />
       <Trending />
-      <FirstRowCardScroll />
+      <FirstRowCardScroll set={set} />
       <CategoriesHeader />
       <CategoryImagesFixed />
       <BrandsHeader />
@@ -27,7 +33,7 @@ const WebPageContents = () => {
       <UpComingReleasesHeader />
       <UpcomingReleasesRowSlider />
       <DealsHeader />
-      <Deals />
+      <Deals set={set} />
       <Footer />
     </div>
   );

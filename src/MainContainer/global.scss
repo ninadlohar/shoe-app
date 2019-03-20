@@ -174,6 +174,16 @@
   display: block;
   background: rgba(84, 84, 84, 0.4) !important;
   color: rgb(84, 84, 84);
+  background-color: rgba(255, 255, 255, 1);
+  background: filter-gradient(#ffffff, #cfcfcf, horizontal);
+  background: background-image(
+    linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(246, 246, 246, 1) 42%,
+      rgba(204, 204, 204, 1) 100%
+    )
+  );
   height: 100%;
   width: 4%;
   justify-content: center !important;
@@ -191,6 +201,16 @@
   display: block;
   background: rgba(84, 84, 84, 0.4) !important;
   color: rgb(84, 84, 84);
+  background-color: rgba(255, 255, 255, 1);
+  background: filter-gradient(#ffffff, #cfcfcf, horizontal);
+  background: background-image(
+    linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(246, 246, 246, 1) 42%,
+      rgba(204, 204, 204, 1) 100%
+    )
+  );
   height: 100%;
   width: 4%;
   justify-content: center !important;
@@ -351,6 +371,7 @@ a#contact.bm-item.menu-item:focus-within {
 .brand-card {
   display: inline-flex !important;
   justify-content: center;
+  // box-shadow: 2px 0px 10px 1px rgba(196, 196, 196, 1);
   img {
     object-fit: contain;
     width: 100%;
@@ -603,7 +624,7 @@ a#contact.bm-item.menu-item:focus-within {
     bottom: 30px;
   }
   .fas.fa-search {
-    left: 62.5%;
+    left: 75.5%;
     position: absolute;
     top: 25%;
   }
@@ -616,6 +637,9 @@ a#contact.bm-item.menu-item:focus-within {
       width: 100%;
       height: 100%;
     }
+  }
+  .inputBox {
+    width: 50%;
   }
 }
 
