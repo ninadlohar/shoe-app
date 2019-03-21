@@ -8,11 +8,36 @@ class Shoe extends React.Component {
       <div className="main-shoe-card">
         <div className="shoe-card">
           <div className="actual-img-shoe-card">
-            <img
-              src={this.props.shoe}
-              alt="nike-shoe"
-              className="shoe-card-img"
-            />
+            {/** the display card starts */}
+            <div className="displayCard">
+              <div className="displayCard-innerBody">
+                <div className="col-12">
+                  <div className="row available">
+                    Available
+                  </div>
+                  <div className="row shops-13">
+                    13 Shops
+                  </div>
+                  <div className="row shoe-img">
+                    <div className="inner-shoe-img">
+                      <img src={require("../../assets/just_part_of_img/shoe.png")} alt="nike-shoe" />
+                    </div>
+                  </div>
+                  <div className="row shoe-logo">
+                    <div className="inner-shoe-logo">
+                      <img src={require("../../assets/just_part_of_img/nike_logo.png")} alt="nike-shoe-logo" />
+                    </div>
+                  </div>
+                  <div className="shoe_name">
+                    Nike Air Max
+                  </div>
+                  <div className="from_price">
+                    <span className="available2">From</span><span className="dollar">$85.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/** the display card ends */}
             <div className="test2">
               <div className="col-12">
                 <div className="row">
