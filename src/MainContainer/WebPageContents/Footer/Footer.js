@@ -17,8 +17,23 @@ const Footer = () => {
             alt="brand-logo"
           />
         </div> */}
+        <div className="connect-logos">
+          <img src={require("../../../assets/connect-image/email.png")} alt="email"/>
+          <img src={require("../../../assets/connect-image/linkedin-logo.png")} alt="linkedin"/>
+          <img src={require("../../../assets/connect-image/twitter.png")} alt="twitter"/>
+          <img src={require("../../../assets/connect-image/google-plus.png")} alt="google-plus"/>
+          <img src={require("../../../assets/connect-image/youtube.png")} alt="youtube"/>
+        </div>
         <div className="get-the-app">
           <h3>Get The App</h3>
+        </div>
+        <div className="youtube-apple">
+          <div className="apple">
+          <img src={require("../../../assets/connect-image/appleStore.png")} alt="email"/>
+            </div>
+          <div className="google">
+            <img src={require("../../../assets/connect-image/googlePlay.png")} alt="email"/> 
+          </div>
         </div>
         <BottomNav />
       </div>

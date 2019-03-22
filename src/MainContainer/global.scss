@@ -4,6 +4,12 @@
   padding: 26px;
 }
 
+.pd8:active {
+  background-color: black;
+  font-weight: 900;
+  color: white;
+}
+
 .available {
   // color: #a5a5a5;
   font-family: "Poppins", sans-serif;
@@ -12,6 +18,15 @@
   font-size: 14px;
   color: #7d7d7d;
   letter-spacing: 0.3px;
+}
+.region {
+  color: #858585;
+  font-weight: 100;
+}
+.regionOnActive:active,
+.regionOnActive:focus {
+  font-weight: 900;
+  color: black;
 }
 .available2 {
   font-family: "Poppins", sans-serif;
@@ -110,6 +125,7 @@
   width: 100%;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
   // visibility: hidden;
   .enter-to-shops-text {
     bottom: 5%;
@@ -218,6 +234,29 @@
   font-family: "Poppins", sans-serif;
 }
 
+.youtube-apple {
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  /* bottom: -28px; */
+  top: -92px;
+  right: 7%;
+}
+
+.apple {
+  img {
+    width: 85% !important;
+    height: 85% !important;
+  }
+}
+
+.google {
+  img {
+    width: 85% !important;
+    height: 85% !important;
+  }
+}
+
 .pd8 {
   padding: 6px;
   margin-left: 16px;
@@ -225,10 +264,29 @@
   font-weight: 900;
 }
 
-.pd8:active {
+.pd8:focus, pd8:active {
   background-color: black;
+  list-style-type: none;
   color: white;
+
 }
+
+.connect-logos {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  bottom: 72px;
+  justify-content: space-evenly;
+  align-items: center;
+  left: 12%;
+  img {
+    height: 15px !important;
+    width: 20px !important;
+  }
+}
+
+
 
 .massive-padding {
   padding-left: 60px;
@@ -246,7 +304,7 @@
 .sh1 {
   font-weight: 900;
   color: #000000;
-  text-align: right;
+  text-align: left;
 }
 
 /** extra div that is hidden and only pops out when hover on shoe-card ends **/
@@ -558,12 +616,12 @@ a#contact.bm-item.menu-item:focus-within {
     color: white !important;
   }
   .get-in-touch {
-    bottom: 80px;
+    bottom: 90px;
     left: 15%;
     position: absolute;
   }
   .get-the-app {
-    bottom: 80px;
+    bottom: 90px;
     right: 15%;
     color: white !important;
     font-family: "Poppins", sans-serif;

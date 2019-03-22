@@ -1,19 +1,69 @@
 import React from "react";
 import "../global.scss";
-import EnterToShops from '../ReusableComponents/EnterToShops';
+import EnterToShops from "../ReusableComponents/EnterToShops";
 
 class Shoe extends React.Component {
+  constructor(props) {
+    super(props)
+  }
   state = {
     onClickEnterShopShow: false,
-    selectedSize: null
+    selectedSize: null,
+    regions: ["EU", "UK", "US"],
+    selectedRegion: null,
+    active: null,
+    activeSize: null,
+  };
+  
+  onClickEnterShopShow = (value, position) => {
+    if(this.state.activeSize === position) {
+      this.setState({
+        // onClickEnterShopShow: true,
+        // selectedSize: value,
+        activeSize: null
+      });
+    } else {
+      this.setState({
+        activeSize: position,
+        onClickEnterShopShow: true,
+        selectedSize: value
+      });
+    }
+
+  };
+
+  selectedRegion = (region, position) => {
+    if (region === "UK" || region === "US" || region === "EU") {
+      this.setState({
+        selectedRegion: region,
+      });
+    }
+    if (this.state.active === position) {
+      this.setState({active : null})
+    } else {
+      this.setState({active : position})
+    }
+  };
+
+  myColor = (position) => {
+    if (this.state.active === position) {
+      return {
+        color: "black",
+        fontWeight:900
+      }
+    }
   }
-  onClickEnterShopShow = (value) => {
-    this.setState({
-      onClickEnterShopShow: true,
-      selectedSize: value
-    })
-    console.log('selectedSize:'+value)
+
+  setActive = (position) => {
+    if (this.state.activeSize === position) {
+      return {
+        backgroundColor: "black",
+        fontWeight: 900,
+        color: "white"
+      }
+    }
   }
+
   render() {
     return (
       <div className="main-shoe-card">
@@ -68,14 +118,32 @@ class Shoe extends React.Component {
                     </div>
                     {/* </div> */}
                     <div className="row">
-                      <div className="col-6 sh">ULTRA SHOE LTD</div>
-                      <div className="col-6 sh1">EU/ UK/ US</div>
+                      <div className="col-8 sh">ULTRA SHOE LTD</div>
+                      <div className="col-4 sh1">
+                        {this.state.regions.map((v, i) => {
+                          return (
+                            <span
+                              onClick={() => this.selectedRegion(v, i)}
+                              className="region"
+                              style={this.myColor(i)}
+                              key={i}
+                            >
+                              {v}/
+                            </span>
+                          );
+                        })}
+                      </div>
                     </div>
                     <div className="size-list">
                       <div className="s1">
                         {this.props.set.set1.map((v, i) => {
                           return (
-                            <div className="pd8" key={v} onClick={() => this.onClickEnterShopShow(v)}>
+                            <div
+                              className="pd8"
+                              key={v}
+                              style={this.setActive(i)}
+                              onClick={() => this.onClickEnterShopShow(v, i)}
+                            >
                               {v}
                             </div>
                           );
@@ -84,7 +152,12 @@ class Shoe extends React.Component {
                       <div className="s2">
                         {this.props.set.set2.map((v, i) => {
                           return (
-                            <div className="pd8" key={v} onClick={() => this.onClickEnterShopShow(v)}>
+                            <div
+                              className="pd8"
+                              key={v}
+                              // style={this.setActive(i)}
+                              onClick={() => this.onClickEnterShopShow(v, i)}
+                            >
                               {v}
                             </div>
                           );
@@ -93,7 +166,12 @@ class Shoe extends React.Component {
                       <div className="s3">
                         {this.props.set.set3.map((v, i) => {
                           return (
-                            <div className="pd8" key={v} onClick={() => this.onClickEnterShopShow(v)}>
+                            <div
+                              className="pd8"
+                              key={v}
+                              // style={this.setActive(i)}
+                              onClick={() => this.onClickEnterShopShow(v, i)}
+                            >
                               {v}
                             </div>
                           );
@@ -105,7 +183,9 @@ class Shoe extends React.Component {
                     <span className="available_hover">From</span>
                     <span className="dollar_hover">$85.00</span>
                   </div>
-                  {this.state.onClickEnterShopShow ? <EnterToShops />: null}
+                  {this.state.onClickEnterShopShow ? (
+                    <EnterToShops selectedSize={this.state.selectedSize} />
+                  ) : null}
                 </div>
               </div>
             </div>
