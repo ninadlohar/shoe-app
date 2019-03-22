@@ -3,8 +3,7 @@
   background-color: #f7f7f7;
   padding: 26px;
 }
-.displayCard-innerBody {
-}
+
 .available {
   // color: #a5a5a5;
   font-family: "Poppins", sans-serif;
@@ -32,7 +31,7 @@
 }
 .shoe-img {
   // padding-top: 21px;
-  padding-top: 25px;
+  padding-top: 47px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,8 +46,17 @@
   text-align: center;
   font-family: "Touche", sans-serif;
   color: #000000;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 28px;
+}
+.shoe_name_on_hover {
+  width: 100%;
+  text-align: center;
+  font-family: "Touche", sans-serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 26px;
+  padding-bottom: 32px;
 }
 .from_price {
   text-align: center;
@@ -60,14 +68,42 @@
   font-weight: 900;
   font-family: "Poppins", sans-serif !important;
 }
-.inner-shoe-img {
+
+.shoe-card:hover {
+  .from_price,
+  .shoe_name,
+  .shoe-logo {
+    // display: none;
+    // visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .inner-shoe-img {
+    img {
+      transition: 0.4s;
+      transform: scale(0.8, 0.8);
+    }
+    transform: translate(0, -48px);
+  }
 }
-/** displayCard ends  touche */
+.shoe-logo-on-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-shoe-logo-on-hover {
+  padding-bottom: 5px;
+  img {
+    width: 79px !important;
+  }
+}
+
+/** displayCard ends */
 
 /** category card */
 .cat-card {
   position: relative;
-  // overflow: hidden;
 }
 .cat-card-hover-clone {
   width: 100%;
@@ -150,15 +186,19 @@
   padding-left: 60px;
   padding-right: 60px;
   // padding-top: 248px;
-  padding-top: 208px;
+  // padding-top: 208px;
+  padding-top: 98px;
 }
 .sh {
   font-weight: 900;
   text-align: center;
+  color: #000000;
 }
+
 .sh1 {
   font-weight: 900;
-  text-align: center;
+  color: #000000;
+  text-align: right;
 }
 
 /** extra div that is hidden and only pops out when hover on shoe-card ends **/
@@ -175,6 +215,15 @@
 
 .size-list {
   color: black;
+  padding: 5px;
+}
+
+.enter-to-shops {
+  background-color: black;
+  color: white;
+  height: 120px;
+  clip-path: polygon(0 55%, 100% 0%, 100% 100%, 0% 100%);
+  width: 100%;
 }
 
 /** dropdown on active ends */

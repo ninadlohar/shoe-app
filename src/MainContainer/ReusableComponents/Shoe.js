@@ -12,27 +12,28 @@ class Shoe extends React.Component {
             <div className="displayCard">
               <div className="displayCard-innerBody">
                 <div className="col-12">
-                  <div className="row available">
-                    Available
-                  </div>
-                  <div className="row shops-13">
-                    13 Shops
-                  </div>
+                  <div className="row available">Available</div>
+                  <div className="row shops-13">13 Shops</div>
                   <div className="row shoe-img">
                     <div className="inner-shoe-img">
-                      <img src={require("../../assets/just_part_of_img/shoe.png")} alt="nike-shoe" />
+                      <img
+                        src={require("../../assets/just_part_of_img/og_shoe.png")}
+                        alt="nike-shoe"
+                      />
                     </div>
                   </div>
                   <div className="row shoe-logo">
                     <div className="inner-shoe-logo">
-                      <img src={require("../../assets/just_part_of_img/nike_logo.png")} alt="nike-shoe-logo" />
+                      <img
+                        src={require("../../assets/just_part_of_img/nike_logo.png")}
+                        alt="nike-shoe-logo"
+                      />
                     </div>
                   </div>
-                  <div className="shoe_name">
-                    Nike Air Max
-                  </div>
+                  <div className="shoe_name">Nike Air Max</div>
                   <div className="from_price">
-                    <span className="available2">From</span><span className="dollar">$85.00</span>
+                    <span className="available2">From</span>
+                    <span className="dollar">$85.00</span>
                   </div>
                 </div>
               </div>
@@ -42,6 +43,19 @@ class Shoe extends React.Component {
               <div className="col-12">
                 <div className="row">
                   <div className="col-12 massive-padding">
+                    {/* <div className="row"> */}
+                    <div className="row shoe-logo-on-hover">
+                      <div className="inner-shoe-logo-on-hover">
+                        <img
+                          src={require("../../assets/just_part_of_img/nike-3.png")}
+                          alt="nike-shoe-logo"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="shoe_name_on_hover">Nike Air Max</div>
+                    </div>
+                    {/* </div> */}
                     <div className="row">
                       <div className="col-6 sh">ULTRA SHOE LTD</div>
                       <div className="col-6 sh1">EU/ UK/ US</div>
@@ -76,6 +90,7 @@ class Shoe extends React.Component {
                       </div>
                     </div>
                   </div>
+                  <div className="enter-to-shops" />
                 </div>
               </div>
             </div>
