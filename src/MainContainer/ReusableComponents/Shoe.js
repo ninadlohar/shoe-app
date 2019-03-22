@@ -14,6 +14,12 @@ class Shoe extends React.Component {
     active: null,
     activeSize: null,
   };
+
+  componentDidMount() {
+    this.setState({
+      selectedRegion: "EU"
+    })
+  }
   
   onClickEnterShopShow = (value, position) => {
     if(this.state.activeSize === position) {
