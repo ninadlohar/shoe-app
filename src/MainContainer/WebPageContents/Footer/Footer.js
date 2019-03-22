@@ -10,13 +10,9 @@ const Footer = () => {
         <div className="get-in-touch">
           <h3>Get In Touch</h3>
         </div>
-        {/* <div className="footer-brand-logo">
-          <img
-            src={require("../../../assets/on-my-feet.png")}
-            className="brand-logo-bottom"
-            alt="brand-logo"
-          />
-        </div> */}
+        <div className="bottom-logo">
+        <img src={require("../../../assets/just_part_of_img/omf.png")} alt="omf" />
+        </div>
         <div className="connect-logos">
           <img src={require("../../../assets/connect-image/email.png")} alt="email"/>
           <img src={require("../../../assets/connect-image/linkedin-logo.png")} alt="linkedin"/>

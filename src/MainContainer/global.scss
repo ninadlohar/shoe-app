@@ -237,15 +237,6 @@
   flex-wrap: wrap;
 }
 
-.youtube-apple {
-  display: -webkit-flex;
-  display: flex;
-  position: absolute;
-  /* bottom: -28px; */
-  top: -92px;
-  right: 7%;
-}
-
 .apple {
   img {
     width: 85% !important;
@@ -274,20 +265,20 @@
 
 }
 
-.connect-logos {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  bottom: 72px;
-  justify-content: space-evenly;
-  align-items: center;
-  left: 12%;
-  img {
-    height: 15px !important;
-    width: 20px !important;
-  }
-}
+// .connect-logos {
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   width: 200px;
+//   bottom: 72px;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   left: 12%;
+//   img {
+//     height: 15px !important;
+//     width: 20px !important;
+//   }
+// }
 
 
 
@@ -620,16 +611,41 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .get-in-touch {
     bottom: 90px;
-    left: 15%;
+    left: 28%;
     position: absolute;
   }
   .get-the-app {
-    bottom: 90px;
-    right: 15%;
+    bottom: 92px;
+    right: 29%;
     color: white !important;
     font-family: "Poppins", sans-serif;
-
     position: absolute;
+  }
+  .connect-logos {
+    position: absolute;
+    bottom: 70px;
+    width: 15%;
+    left: 24%;
+    display: flex;
+    justify-content: space-evenly;
+    img {
+      height: 15px !important;
+      width: 20px !important;
+    }
+  }
+  .bottom-logo {
+    position: absolute;
+    bottom: 35px;
+    left: 44%
+  }
+  .youtube-apple {
+    position: absolute;
+    bottom: 64px;
+    width: 15%;
+    right: 24%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
@@ -873,22 +889,97 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (min-width: 200px) and (max-width: 700px) {
-  // .logo {
-  //   width: 60px;
-  //   left: 0;
-  //   top: 0;
-  //   position: absolute;
-  //   height: 30px;
-  //   margin: 30px;
-  //   img {
-  //     height: 100%;
-  //   }
-  // }
   .top-fluid-image {
     max-width: 100%;
     img {
       height: 270px;
     }
+  }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+  .connect-logos {
+    left: 10% !important;
+  }
+  .get-the-app {
+    right: 10% !important;
+  }
+  .get-in-touch {
+    left: 10% !important;
+  }
+  .get-the-app {
+    right: 10% !important;
+    bottom: 87px !important;
+  }.youtube-apple {
+    right: 10% !important;
+  }
+  .bottom-logo {
+    left: 38% !important;
+  }
+}
+
+@media(min-width: 438px) and (max-width: 575px) {
+  .connect-logos {
+    left: 4% !important;
+  }
+  .get-the-app {
+    right: 10% !important;
+  }
+  .get-in-touch {
+    left: 3% !important;
+  }
+  .get-the-app {
+    right: 3% !important;
+    bottom: 87px !important;
+  }.youtube-apple {
+    right: 4% !important;
+  }
+  .bottom-logo {
+    bottom: 41px !important;
+    left: 34% !important;
+  }
+}
+
+@media(min-width: 400px) and (max-width: 437px) {
+  .connect-logos {
+    left: 6% !important;
+  }
+  .get-the-app {
+    right: 10% !important;
+  }
+  .get-in-touch {
+    left: 3% !important;
+  }
+  .get-the-app {
+    right: 3% !important;
+    bottom: 87px !important;
+  }.youtube-apple {
+    right: 6% !important;
+  }
+  .bottom-logo {
+    bottom: 41px !important;
+    left: 32% !important;
+  }
+}
+
+@media (max-width: 399px) {
+  .connect-logos {
+    display: none !important;
+  }
+  .get-the-app {
+    display: none;
+  }
+  .get-in-touch {
+    display: none;
+  }
+  .get-the-app {
+    display: none;
+  }
+  .youtube-apple {
+    display: none !important;
+  }
+  .bottom-logo {
+    display: none;
   }
 }
 
@@ -927,6 +1018,8 @@ a#contact.bm-item.menu-item:focus-within {
   .bm-burger-button {
     position: fixed;
   }
+  /***/
+
 }
 
 @media (min-width: 500px) and (max-width: 989px) {
@@ -936,6 +1029,69 @@ a#contact.bm-item.menu-item:focus-within {
     top: 25%;
   }
 }
+
+@media (min-width: 1100px) and (max-width: 1310px) {
+  .youtube-apple {
+    position: absolute;
+    right: 19%;
+  }
+  .get-the-app {
+    right: 26%;
+  }
+}
+
+@media (min-width: 929px) and (max-width: 1099px) {
+  .connect-logos {
+    left: 26%;
+  }
+  .get-in-touch {
+    left: 29%;
+  }
+  .bottom-logo {
+    left: 42% !important;
+  }
+}
+
+@media (min-width: 860px) and (max-width: 928px) {
+  .connect-logos {
+    left: 26% !important;
+  }
+  .get-in-touch {
+    left: 29%;
+  }
+  .bottom-logo {
+    left: 41% !important;
+  }
+  .youtube-apple {
+    right: 27% !important;
+  }.get-the-app {
+    right: 30% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 859px) {
+  .connect-logos {
+    left: 20% !important;
+  }
+  .get-the-app {
+    right: 30% !important;
+  }
+  .get-in-touch {
+    left: 22% !important;
+  }
+  .get-the-app {
+    right: 18% !important;
+    bottom: 87px !important;
+  }.youtube-apple {
+    right: 16% !important;
+  }
+  .bottom-logo {
+    left: 42% !important;
+  }
+
+}
+
+
 
 @media (min-width: 769px) and (max-width: 5000px) {
   .ham-menu {
