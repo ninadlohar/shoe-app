@@ -155,7 +155,7 @@ class Shoe extends React.Component {
                             <div
                               className="pd8"
                               key={v}
-                              // style={this.setActive(i)}
+                              style={this.setActive(i)}
                               onClick={() => this.onClickEnterShopShow(v, i)}
                             >
                               {v}
