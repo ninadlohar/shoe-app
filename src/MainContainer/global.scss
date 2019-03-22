@@ -179,7 +179,7 @@
   visibility: hidden;
   cursor: pointer;
 }
-.cat-card:hover .cat-card-hover-clone {
+.cat-card .cat-card-hover-clone {
   transition: 0.2s;
   top: 95%;
   visibility: visible;
@@ -992,6 +992,9 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
+  .slick-arrow.slick-next, .slick-arrow.slick-prev {
+    width: 7%;
+  }
   .logo {
     display: none !important;
   }
