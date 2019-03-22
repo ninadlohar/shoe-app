@@ -47,8 +47,8 @@ class FirstRowCardScroll extends React.Component {
         {
           breakpoint: 1800,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2,
+            slidesToShow: 4,
+            slidesToScroll: 1,
             infinite: true,
             dots: false
           }
@@ -56,18 +56,25 @@ class FirstRowCardScroll extends React.Component {
         {
           breakpoint: 1360,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 3,
+            slidesToScroll: 1,
             infinite: true,
             dots: false
           }
         },
         {
-          breakpoint: 942,
+          breakpoint: 972,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 570,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 2,
-            initialSlide: 2,
+            slidesToScroll: 1,
             dots: false
           }
         }

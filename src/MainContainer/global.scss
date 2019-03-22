@@ -3,13 +3,14 @@
   background-color: #f7f7f7;
   padding: 26px;
 }
-.displayCard-innerBody{}
+.displayCard-innerBody {
+}
 .available {
   // color: #a5a5a5;
   font-family: "Poppins", sans-serif;
   text-align: left !important;
   font-weight: 900 !important;
-  font-size: 12px;
+  font-size: 14px;
   color: #7d7d7d;
   letter-spacing: 0.3px;
 }
@@ -26,11 +27,12 @@
   font-family: "Poppins", sans-serif;
   text-align: left !important;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 900 !important;
 }
 .shoe-img {
-  padding-top: 21px;
+  // padding-top: 21px;
+  padding-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +52,7 @@
 }
 .from_price {
   text-align: center;
+  padding-bottom: 55px;
 }
 .dollar {
   color: #000000;
@@ -57,7 +60,8 @@
   font-weight: 900;
   font-family: "Poppins", sans-serif !important;
 }
-.inner-shoe-img {}
+.inner-shoe-img {
+}
 /** displayCard ends  touche */
 
 /** category card */
@@ -180,7 +184,9 @@
 }
 
 .main-shoe-card {
+  // width: 500px;
   width: 100%;
+  padding: 10px;
   display: flex !important;
   justify-content: center;
   align-items: center;

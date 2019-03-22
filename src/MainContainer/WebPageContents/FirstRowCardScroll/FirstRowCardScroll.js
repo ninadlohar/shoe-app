@@ -47,7 +47,7 @@ class FirstRowCardScroll extends React.Component {
         {
           breakpoint: 1800,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
             dots: false
@@ -56,14 +56,22 @@ class FirstRowCardScroll extends React.Component {
         {
           breakpoint: 1360,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: false
           }
         },
         {
-          breakpoint: 942,
+          breakpoint: 972,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 570,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -75,14 +83,16 @@ class FirstRowCardScroll extends React.Component {
     return (
       <div className="first-row-card-scroll-padding-l-r">
         <Slider {...settings}>
-          <div className="shoe-card">
+          {/* <div className="shoe-card">
             <img
               src={require("../../../assets/black.png")}
               alt="black-nike-shoe"
             />
-          </div>
+          </div> */}
           <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
-          <img src={require("../../../assets/shoe.png")} alt="ss" />
+          {/* <img src={require("../../../assets/shoe.png")} alt="ss" /> */}
+          <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
+          <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
           <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
           <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
           <Shoe set={this.props.set} shoe={this.props.NikeShoe} />
