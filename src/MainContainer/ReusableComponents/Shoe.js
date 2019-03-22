@@ -90,7 +90,13 @@ class Shoe extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="enter-to-shops" />
+                  <div className="from_price_hover">
+                    <span className="available_hover">From</span>
+                    <span className="dollar_hover">$85.00</span>
+                  </div>
+                  <div className="enter-to-shops">
+                    <div className="enter-to-shops-text">Enter to Shops.</div>
+                  </div>
                 </div>
               </div>
             </div>

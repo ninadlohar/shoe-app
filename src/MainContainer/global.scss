@@ -99,6 +99,47 @@
   }
 }
 
+.enter-to-shops {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  clip-path: polygon(0 55%, 100% 0%, 100% 100%, 0% 100%);
+  width: 100%;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  .enter-to-shops-text {
+    bottom: 5%;
+    display: block;
+    position: absolute;
+  }
+}
+
+.from_price_hover {
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+  .available_hover {
+    font-family: "Poppins", sans-serif;
+    text-align: left !important;
+    font-weight: 900 !important;
+    font-size: 13px;
+    color: #7d7d7d;
+    letter-spacing: 0.3px;
+  }
+  .dollar_hover {
+    padding-left: 4px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-align: left !important;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 900 !important;
+  }
+}
+
 /** displayCard ends */
 
 /** category card */
@@ -216,14 +257,6 @@
 .size-list {
   color: black;
   padding: 5px;
-}
-
-.enter-to-shops {
-  background-color: black;
-  color: white;
-  height: 120px;
-  clip-path: polygon(0 55%, 100% 0%, 100% 100%, 0% 100%);
-  width: 100%;
 }
 
 /** dropdown on active ends */
@@ -717,7 +750,7 @@ a#contact.bm-item.menu-item:focus-within {
   .massive-padding {
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 60%;
+    padding-top: 32%;
   }
   .get-in-touch {
     display: none;
