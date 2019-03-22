@@ -26,7 +26,7 @@ const WebPageContents = () => {
       <Logo />
       <Header />
       <Trending />
-      <FirstRowCardScroll set={set} NikeShoe={NikeShoe} />
+      <FirstRowCardScroll set1={set.set1} set2={set.set2} NikeShoe={NikeShoe} />
       <CategoriesHeader />
       <CategoryImagesFixed />
       <BrandsHeader />
@@ -34,7 +34,7 @@ const WebPageContents = () => {
       <UpComingReleasesHeader />
       <UpcomingReleasesRowSlider />
       <DealsHeader />
-      <Deals set={set} OfferShoe={OfferShoe} />
+      <Deals set1={set.set1} set2={set.set2} OfferShoe={OfferShoe} />
       <Footer />
     </div>
   );

@@ -47,7 +47,7 @@ class Shoe extends React.Component {
     if (this.state.active === position) {
       return {
         color: "black",
-        fontWeight:900
+        fontWeight:"bold"
       }
     }
   }
@@ -134,7 +134,7 @@ class Shoe extends React.Component {
                     </div>
                     <div className="size-list">
                       <div className="s1">
-                        {this.props.set.set1.map((v, i) => {
+                        {this.props.set1.map((v, i) => {
                           return (
                             <div
                               className="pd8"
