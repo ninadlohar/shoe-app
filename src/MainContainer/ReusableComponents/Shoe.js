@@ -63,6 +63,54 @@ class Shoe extends React.Component {
   }
 
   render() {
+    let EUregion = (
+      <div className="s1">
+      {this.props.set1.map((v, i) => {
+        return (
+          <div
+            className="pd8"
+            key={v}
+            style={this.setActive(i)}
+            onClick={() => this.onClickEnterShopShow(v, i)}
+          >
+            {v}
+          </div>
+        );
+      })}
+    </div>
+    )
+    let UKregion = (
+      <div className="s1">
+      {this.props.set2.map((v, i) => {
+        return (
+          <div
+            className="pd8"
+            key={v}
+            style={this.setActive(i)}
+            onClick={() => this.onClickEnterShopShow(v, i)}
+          >
+            {v}
+          </div>
+        );
+      })}
+    </div>
+    )
+    let USregion = (
+      <div className="s1">
+      {this.props.set3.map((v, i) => {
+        return (
+          <div
+            className="pd8"
+            key={v}
+            style={this.setActive(i)}
+            onClick={() => this.onClickEnterShopShow(v, i)}
+          >
+            {v}
+          </div>
+        );
+      })}
+    </div>
+    )
     return (
       <div className="main-shoe-card">
         <div className="shoe-card">
@@ -133,20 +181,9 @@ class Shoe extends React.Component {
                       </div>
                     </div>
                     <div className="size-list">
-                      <div className="s1">
-                        {this.props.set1.map((v, i) => {
-                          return (
-                            <div
-                              className="pd8"
-                              key={v}
-                              style={this.setActive(i)}
-                              onClick={() => this.onClickEnterShopShow(v, i)}
-                            >
-                              {v}
-                            </div>
-                          );
-                        })}
-                      </div>
+                    {this.state.selectedRegion === "EU"? EUregion : null}
+                    {this.state.selectedRegion === "UK"? UKregion : null}
+                    {this.state.selectedRegion === "US"? USregion  : null}
                     </div>
                   </div>
                   <div className="from_price_hover">
