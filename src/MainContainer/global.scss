@@ -110,10 +110,17 @@
   width: 100%;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
+  // visibility: hidden;
   .enter-to-shops-text {
     bottom: 5%;
     display: block;
     position: absolute;
+    // visibility: hidden;
+  }
+}
+.pd8:active {
+  .enter-to-shops {
+    visibility: visible;
   }
 }
 

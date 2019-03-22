@@ -1,8 +1,19 @@
 import React from "react";
 import "../global.scss";
-import OfferImage from "../../assets/d1-offer.png";
+import EnterToShops from '../ReusableComponents/EnterToShops';
 
 class Shoe extends React.Component {
+  state = {
+    onClickEnterShopShow: false,
+    selectedSize: null
+  }
+  onClickEnterShopShow = (value) => {
+    this.setState({
+      onClickEnterShopShow: true,
+      selectedSize: value
+    })
+    console.log('selectedSize:'+value)
+  }
   render() {
     return (
       <div className="main-shoe-card">
@@ -64,7 +75,7 @@ class Shoe extends React.Component {
                       <div className="s1">
                         {this.props.set.set1.map((v, i) => {
                           return (
-                            <div className="pd8" key={v}>
+                            <div className="pd8" key={v} onClick={() => this.onClickEnterShopShow(v)}>
                               {v}
                             </div>
                           );
@@ -73,7 +84,7 @@ class Shoe extends React.Component {
                       <div className="s2">
                         {this.props.set.set2.map((v, i) => {
                           return (
-                            <div className="pd8" key={v}>
+                            <div className="pd8" key={v} onClick={() => this.onClickEnterShopShow(v)}>
                               {v}
                             </div>
                           );
@@ -82,7 +93,7 @@ class Shoe extends React.Component {
                       <div className="s3">
                         {this.props.set.set3.map((v, i) => {
                           return (
-                            <div className="pd8" key={v}>
+                            <div className="pd8" key={v} onClick={() => this.onClickEnterShopShow(v)}>
                               {v}
                             </div>
                           );
@@ -94,9 +105,7 @@ class Shoe extends React.Component {
                     <span className="available_hover">From</span>
                     <span className="dollar_hover">$85.00</span>
                   </div>
-                  <div className="enter-to-shops">
-                    <div className="enter-to-shops-text">Enter to Shops.</div>
-                  </div>
+                  {this.state.onClickEnterShopShow ? <EnterToShops />: null}
                 </div>
               </div>
             </div>
