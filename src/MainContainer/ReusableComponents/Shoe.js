@@ -18,8 +18,6 @@ class Shoe extends React.Component {
   onClickEnterShopShow = (value, position) => {
     if(this.state.activeSize === position) {
       this.setState({
-        // onClickEnterShopShow: true,
-        // selectedSize: value,
         activeSize: null
       });
     } else {
@@ -142,34 +140,6 @@ class Shoe extends React.Component {
                               className="pd8"
                               key={v}
                               style={this.setActive(i)}
-                              onClick={() => this.onClickEnterShopShow(v, i)}
-                            >
-                              {v}
-                            </div>
-                          );
-                        })}
-                      </div>
-                      <div className="s2">
-                        {this.props.set.set2.map((v, i) => {
-                          return (
-                            <div
-                              className="pd8"
-                              key={v}
-                              style={this.setActive(i)}
-                              onClick={() => this.onClickEnterShopShow(v, i)}
-                            >
-                              {v}
-                            </div>
-                          );
-                        })}
-                      </div>
-                      <div className="s3">
-                        {this.props.set.set3.map((v, i) => {
-                          return (
-                            <div
-                              className="pd8"
-                              key={v}
-                              // style={this.setActive(i)}
                               onClick={() => this.onClickEnterShopShow(v, i)}
                             >
                               {v}
