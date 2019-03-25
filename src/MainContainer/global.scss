@@ -1242,6 +1242,9 @@ a#contact.bm-item.menu-item:focus-within {
   .massive-padding {
     padding-top: 86px;
   }
+  .from_price_hover {
+    padding-bottom: 0px;
+  }
 
 }
 @media (min-width: 201px) and (max-width: 320px) {
@@ -1252,6 +1255,7 @@ a#contact.bm-item.menu-item:focus-within {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
   .shoe_name_on_hover {
     font-size: 22px;
   }
