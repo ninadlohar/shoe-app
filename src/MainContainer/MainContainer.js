@@ -63,6 +63,9 @@ class MainContainer extends React.Component {
             <Col md="12" sm="12" lg="12" xl="12" sm="12" className="nopadding">
               <div className="top-fluid-image">
                 <div className="ham-menu">
+                <div className="logo-when-resize">
+                <img src={require("../assets/on-my-feet.png")} alt="oh-my-foot" />
+                </div>
                   <Menu right width={"300px"}>
                     <a
                       id="contact"

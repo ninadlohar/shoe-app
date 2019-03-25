@@ -358,6 +358,13 @@
   padding: 5px;
 }
 
+.logo-when-resize {
+  padding: 10px;
+  img {
+    height: 40px !important;
+  }
+}
+
 /** dropdown on active ends */
 
 #outer-container {
@@ -918,9 +925,14 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .youtube-apple {
     right: 10% !important;
-    bottom: 78px !important;
+    bottom: 72px !important;
     display: block !important;
     right: 7% !important;
+  }
+  .youtube-apple {
+    .apple {
+      padding-bottom: 4px;
+    }
   }
   .google img {
     width: 80px !important;
@@ -1041,9 +1053,9 @@ a#contact.bm-item.menu-item:focus-within {
   .bottom-logo {
     display: none;
   }
-  .last-line {
-    display: none;
-  }
+  // .last-line {
+  //   display: none;
+  // }
 }
 
 @media (min-width: 280px) and (max-width: 990px) {
@@ -1171,7 +1183,10 @@ a#contact.bm-item.menu-item:focus-within {
 
 @media (min-width: 100px) and (max-width: 444px) {
   .main-header-padding {
-    padding: 0px;
+    padding: 8px;
+    h1 {
+      font-size: 18px;
+    }
   }
   .pd8 {
     padding: 4px;
