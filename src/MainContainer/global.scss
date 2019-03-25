@@ -307,21 +307,6 @@ pd8:active {
   color: white;
 }
 
-// .connect-logos {
-//   position: absolute;
-//   display: flex;
-//   justify-content: center;
-//   width: 200px;
-//   bottom: 72px;
-//   justify-content: space-evenly;
-//   align-items: center;
-//   left: 12%;
-//   img {
-//     height: 15px !important;
-//     width: 20px !important;
-//   }
-// }
-
 .massive-padding {
   padding-left: 60px;
   padding-right: 60px;
@@ -930,10 +915,9 @@ a#contact.bm-item.menu-item:focus-within {
     bottom: 90px !important;
   }
   .youtube-apple {
-    right: 10% !important;
+    right: 18% !important;
     bottom: 72px !important;
     display: block !important;
-    right: 7% !important;
   }
   .youtube-apple {
     .apple {
@@ -1050,9 +1034,6 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (max-width: 399px) {
-  .connect-logos {
-    display: none !important;
-  }
   .get-the-app {
     display: none;
   }
@@ -1062,9 +1043,7 @@ a#contact.bm-item.menu-item:focus-within {
   .get-the-app {
     display: none;
   }
-  .youtube-apple {
-    display: none !important;
-  }
+
   .bottom-logo {
     display: none;
   }
