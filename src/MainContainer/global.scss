@@ -252,7 +252,7 @@
 .test2 {
   width: 100%;
   left: 0%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 5px 2px rgba(247, 247, 247, 1);
   position: absolute;
   top: 100%;
@@ -773,8 +773,6 @@ a#contact.bm-item.menu-item:focus-within {
   overflow: hidden;
   // padding: 8px;
   img {
-    // height: 280px;
-    // width: 250px;
     width: 100%;
     object-fit: contain;
   }
@@ -865,6 +863,12 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (min-width: 200px) and (max-width: 499px) {
+  .last-line {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .main-header-padding {
     padding: 16px 0px;
   }
@@ -878,11 +882,11 @@ a#contact.bm-item.menu-item:focus-within {
       height: 100%;
     }
   }
-  .massive-padding {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 32%;
-  }
+  // .massive-padding {
+  //   padding-left: 60px;
+  //   padding-right: 60px;
+  //   padding-top: 32%;
+  // }
   .get-in-touch {
     display: none;
   }
@@ -942,6 +946,10 @@ a#contact.bm-item.menu-item:focus-within {
     width: 80px !important;
     height: 25px !important;
   }
+  .contents {
+    position: absolute;
+    bottom: 16px;
+  }
 }
 
 
@@ -957,6 +965,9 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .dropdown-menu .show {
     left: -10px;
+  }
+  .shoe_name_on_hover {
+    padding-bottom: 6px;
   }
 }
 
@@ -1058,7 +1069,7 @@ a#contact.bm-item.menu-item:focus-within {
   // }
 }
 
-@media (min-width: 280px) and (max-width: 990px) {
+@media (min-width: 220px) and (max-width: 990px) {
   .al-it-center {
     text-align: center;
     // padding: 8px;
@@ -1223,3 +1234,53 @@ a#contact.bm-item.menu-item:focus-within {
 .scrollToBtm.active {
   top: 20%;
 }
+
+@media (min-width: 571px) and (max-width: 700px) {
+  .pd8 {
+    margin-left: 4px;
+  }
+  .massive-padding {
+    padding-top: 86px;
+  }
+
+}
+@media (min-width: 201px) and (max-width: 320px) {
+  .main-shoe-card {
+    padding: 0px;
+  }
+  .test2 .col-12 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .shoe_name_on_hover {
+    font-size: 22px;
+  }
+  .size-list {
+    padding: 10px;
+  }
+  .sh , .sh1 {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  .pd8 {
+    font-size: 13px;
+    margin-left: 4px; 
+  }
+  .massive-padding {
+    padding-top: 36%;
+  }
+  .inner-shoe-logo-on-hover img {
+    width: 60px !important;
+  }
+  .shoe_name {
+    font-size: 22px;
+  }
+  .available {
+    font-size: 12px;
+  }
+  .shops-13 {
+    font-size: 13px;
+  }
+}
+
+
