@@ -12,6 +12,19 @@
 }
 
 .credit-cards {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fab {
+  padding-left: 4px;
+  font-size: 20px;
+  color: black;
+}
+
+.owner-contents {
+  width: 50%;
 
 }
 
@@ -898,7 +911,27 @@ a#contact.bm-item.menu-item:focus-within {
   .inputBox {
     width: 50%;
   }
+  .footer-contents .connect-logos {
+    left: 10% !important;
+    bottom: 90px !important;
+
+  }
+  .youtube-apple {
+    right: 10% !important;
+    bottom: 78px !important;
+    display: block !important;
+    right: 7% !important;
+  }
+  .google img {
+    width: 80px !important;
+    height: 25px !important;
+  }
+  .apple img {
+    width: 80px !important;
+    height: 25px !important;
+  }
 }
+
 
 @media (min-width: 200px) and (max-width: 330px) {
   .show-hide-items.dropdown-item {
@@ -1006,6 +1039,9 @@ a#contact.bm-item.menu-item:focus-within {
     display: none !important;
   }
   .bottom-logo {
+    display: none;
+  }
+  .last-line {
     display: none;
   }
 }

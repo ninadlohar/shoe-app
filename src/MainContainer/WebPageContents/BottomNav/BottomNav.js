@@ -13,9 +13,11 @@ const BottomNav = () => {
         <div className="content">Get In Touch</div>
       </div>
       <div className="last-line">
-        <div>
+        <div className="owner-contents">
           <span className="copyright">Copyright &copy On My Feet - Powered By</span><strong className="double-black">Omaha Group</strong>
-          <span className="credit-cards">
+        </div>
+        <div  className="credit-cards">
+        <span>
           <i className="fab fa-cc-visa"></i>
           <i class="fab fa-cc-mastercard"></i>
           <i class="fab fa-cc-discover"></i>
