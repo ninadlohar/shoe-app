@@ -341,10 +341,6 @@ pd8:active {
   text-align: left;
 }
 
-// .selectedRegions {
-//   padding-left: 30%;
-// }
-
 /** extra div that is hidden and only pops out when hover on shoe-card ends **/
 
 /** dropdown on active starts */
@@ -359,6 +355,7 @@ pd8:active {
 
 button.dropdown-item {
   width: 13rem !important;
+  padding: 0.25rem 0.3rem !important;
 }
 
 .size-list {

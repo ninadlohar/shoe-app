@@ -47,13 +47,17 @@ class InputBox extends React.Component {
   selectedRegion = (region, position) => {
     if (region === "UK" || region === "US" || region === "EU") {
       this.setState({
-        selectedRegion: region
+        selectedRegion: region,
+        dropdownOpen: !this.state.dropdownOpen
       });
     }
     if (this.state.active === position) {
-      this.setState({ active: null });
+      this.setState({ active: null, dropdownOpen: !this.state.dropdownOpen });
     } else {
-      this.setState({ active: position });
+      this.setState({
+        active: position,
+        dropdownOpen: !this.state.dropdownOpen
+      });
     }
   };
 
@@ -77,8 +81,10 @@ class InputBox extends React.Component {
   };
 
   toggle() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+    this.setState(prevState => {
+      return {
+        dropdownOpen: !prevState.dropdownOpen
+      };
     });
   }
   render() {
@@ -139,7 +145,7 @@ class InputBox extends React.Component {
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem className="show-hide-items">
-                <div>
+                <div style={{ color: "#747474" }}>
                   <span>Show/Hide Intermediate Sizes</span>
                   <span className="regionNames">
                     {this.state.regions.map((v, i) => {
