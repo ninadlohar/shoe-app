@@ -1,3 +1,30 @@
+.last-line {
+  position: absolute;
+  bottom: -40px;
+  height: 40px;
+  background-color: white;
+  width: 100%;
+  color: #c1c1c1;
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  align-items: center;
+}
+
+.credit-cards {
+
+}
+
+
+.copyright {
+  font-size: 8px;
+  padding-right: 4px;
+}
+
+.double-black {
+  color: black !important;
+}
+
 /** displayCard starts */
 .displayCard {
   background-color: #f7f7f7;

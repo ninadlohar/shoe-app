@@ -33,6 +33,7 @@ const Footer = () => {
         </div>
         <BottomNav />
       </div>
+
     </div>
   );
 };
