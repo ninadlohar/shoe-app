@@ -93,7 +93,7 @@ class InputBox extends React.Component {
         {this.props.set1.map((v, i) => {
           return (
             <div
-              className="pd8"
+              className="pd8 cGrey"
               key={v}
               style={this.setActive(i)}
               onClick={() => this.onClickEnterShopShow(v, i)}
@@ -109,7 +109,7 @@ class InputBox extends React.Component {
         {this.props.set2.map((v, i) => {
           return (
             <div
-              className="pd8"
+              className="pd8 cGrey"
               key={v}
               style={this.setActive(i)}
               onClick={() => this.onClickEnterShopShow(v, i)}
@@ -125,7 +125,7 @@ class InputBox extends React.Component {
         {this.props.set3.map((v, i) => {
           return (
             <div
-              className="pd8"
+              className="pd8 cGrey"
               key={v}
               style={this.setActive(i)}
               onClick={() => this.onClickEnterShopShow(v, i)}

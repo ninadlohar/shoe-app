@@ -11,8 +11,24 @@
   align-items: center;
 }
 
+.eqWidth,
+.eqWidth1,
+.eqWidth2 {
+  width: 33.3%;
+  position: absolute;
+}
+
+.cGrey {
+  color: #908f90 !important;
+  font-weight: 100 !important;
+}
+.cGrey:active {
+  color: white;
+}
+
 .regionNames {
   padding-left: 40px;
+  font-size: 11px;
 }
 
 .credit-cards {
@@ -50,6 +66,7 @@
   background-color: black;
   font-weight: 900;
   color: white;
+  font-size: 13px;
 }
 
 .available {
@@ -298,20 +315,20 @@
   margin-left: 16px;
   text-align: left;
   font-weight: 900;
+  font-size: 13px;
 }
 
 .pd8:focus,
-pd8:active {
+.pd8:active {
   background-color: black;
   list-style-type: none;
   color: white;
+  font-size: 13px;
 }
 
 .massive-padding {
-  padding-left: 60px;
-  padding-right: 60px;
-  // padding-top: 248px;
-  // padding-top: 208px;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
   padding-top: 98px;
 }
 .sh {
@@ -330,17 +347,30 @@ pd8:active {
 
 /** dropdown on active starts */
 
-.dropdown-item.active,
-.dropdown-item:active {
+.dropdown-item.active {
   color: black;
   text-decoration: none;
   background-color: white !important;
   outline: none;
 }
 
+.dropdown-item {
+  &:active,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    background-color: white !important;
+    outline: none;
+    background-color: transparent !important;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+}
+
 button.dropdown-item {
-  width: 13rem !important;
+  width: 16rem !important;
   padding: 0.25rem 0.3rem !important;
+  outline: none;
 }
 
 .size-list {
@@ -483,6 +513,7 @@ button.dropdown-item {
   padding: 6px;
   margin-left: 16px;
   text-align: left;
+  font-size: 13px;
 }
 
 .show-size1 {
@@ -586,7 +617,8 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 .inputBox .form-control {
-  font-size: 12px;
+  font-size: 10px;
+  padding: 1rem 0.75rem;
   font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 0px;
@@ -633,10 +665,6 @@ a#contact.bm-item.menu-item:focus-within {
   }
 }
 
-// .brand-card:hover {
-//   box-shadow: 1px 1px 1px 1px #d4d4d4;
-// }
-
 .footer-contents {
   position: absolute;
   width: 100%;
@@ -648,12 +676,12 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .get-in-touch {
     bottom: 90px;
-    left: 28%;
+    left: 29%;
     position: absolute;
   }
   .get-the-app {
-    bottom: 92px;
-    right: 29%;
+    bottom: 90px;
+    right: 28%;
     color: white !important;
     font-family: "Poppins", sans-serif;
     position: absolute;
@@ -662,7 +690,7 @@ a#contact.bm-item.menu-item:focus-within {
     position: absolute;
     bottom: 70px;
     width: 15%;
-    left: 24%;
+    left: 25%;
     display: flex;
     justify-content: space-evenly;
     img {
@@ -673,13 +701,13 @@ a#contact.bm-item.menu-item:focus-within {
   .bottom-logo {
     position: absolute;
     bottom: 35px;
-    left: 44%;
+    left: 45%;
   }
   .youtube-apple {
     position: absolute;
-    bottom: 64px;
+    bottom: 62px;
     width: 15%;
-    right: 24%;
+    right: 23%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -870,11 +898,6 @@ a#contact.bm-item.menu-item:focus-within {
       height: 100%;
     }
   }
-  // .massive-padding {
-  //   padding-left: 60px;
-  //   padding-right: 60px;
-  //   padding-top: 32%;
-  // }
   .get-in-touch {
     display: none;
   }
@@ -947,15 +970,13 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .pd8 {
     padding: 2px;
+    font-size: 13px;
   }
   .dropdown-menu .show {
     left: -10px;
   }
   .shoe_name_on_hover {
     padding-bottom: 0px !important;
-  }
-  .pd8 {
-    font-size: 14px;
   }
   .shoe_name_on_hover {
     padding-bottom: 26px;
@@ -967,7 +988,7 @@ a#contact.bm-item.menu-item:focus-within {
     padding-bottom: 0px;
   }
   .pd8 {
-    font-size: 14px;
+    font-size: 13px;
   }
   .shoe_name_on_hover {
     padding-bottom: 26px;
@@ -981,93 +1002,6 @@ a#contact.bm-item.menu-item:focus-within {
       height: 270px;
     }
   }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  .connect-logos {
-    left: 10% !important;
-  }
-  .get-the-app {
-    right: 10% !important;
-  }
-  .get-in-touch {
-    left: 10% !important;
-  }
-  .get-the-app {
-    right: 10% !important;
-    bottom: 87px !important;
-  }
-  .youtube-apple {
-    right: 10% !important;
-  }
-  .bottom-logo {
-    left: 38% !important;
-  }
-}
-
-@media (min-width: 438px) and (max-width: 575px) {
-  .connect-logos {
-    left: 4% !important;
-  }
-  .get-the-app {
-    right: 10% !important;
-  }
-  .get-in-touch {
-    left: 3% !important;
-  }
-  .get-the-app {
-    right: 3% !important;
-    bottom: 87px !important;
-  }
-  .youtube-apple {
-    right: 4% !important;
-  }
-  .bottom-logo {
-    bottom: 41px !important;
-    left: 34% !important;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 437px) {
-  .connect-logos {
-    left: 6% !important;
-  }
-  .get-the-app {
-    right: 10% !important;
-  }
-  .get-in-touch {
-    left: 3% !important;
-  }
-  .get-the-app {
-    right: 3% !important;
-    bottom: 87px !important;
-  }
-  .youtube-apple {
-    right: 6% !important;
-  }
-  .bottom-logo {
-    bottom: 41px !important;
-    left: 32% !important;
-  }
-}
-
-@media (max-width: 399px) {
-  .get-the-app {
-    display: none;
-  }
-  .get-in-touch {
-    display: none;
-  }
-  .get-the-app {
-    display: none;
-  }
-
-  .bottom-logo {
-    display: none;
-  }
-  // .last-line {
-  //   display: none;
-  // }
 }
 
 @media (min-width: 220px) and (max-width: 990px) {
@@ -1123,40 +1057,10 @@ a#contact.bm-item.menu-item:focus-within {
 @media (min-width: 1100px) and (max-width: 1310px) {
   .youtube-apple {
     position: absolute;
-    right: 19%;
+    right: 22%;
   }
   .get-the-app {
     right: 26%;
-  }
-}
-
-@media (min-width: 929px) and (max-width: 1099px) {
-  .connect-logos {
-    left: 26%;
-  }
-  .get-in-touch {
-    left: 29%;
-  }
-  .bottom-logo {
-    left: 42% !important;
-  }
-}
-
-@media (min-width: 860px) and (max-width: 928px) {
-  .connect-logos {
-    left: 26% !important;
-  }
-  .get-in-touch {
-    left: 29%;
-  }
-  .bottom-logo {
-    left: 41% !important;
-  }
-  .youtube-apple {
-    right: 27% !important;
-  }
-  .get-the-app {
-    right: 30% !important;
   }
 }
 
@@ -1165,29 +1069,8 @@ a#contact.bm-item.menu-item:focus-within {
     padding-bottom: 18px;
   }
   .pd8 {
+    font-size: 13px;
     padding: 2px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 859px) {
-  .connect-logos {
-    left: 20% !important;
-  }
-  .get-the-app {
-    right: 30% !important;
-  }
-  .get-in-touch {
-    left: 22% !important;
-  }
-  .get-the-app {
-    right: 18% !important;
-    bottom: 87px !important;
-  }
-  .youtube-apple {
-    right: 16% !important;
-  }
-  .bottom-logo {
-    left: 42% !important;
   }
 }
 
@@ -1211,6 +1094,7 @@ a#contact.bm-item.menu-item:focus-within {
   .pd8 {
     padding: 4px;
     margin-left: 8px;
+    font-size: 13px;
   }
   button.dropdown-item {
     padding: 4px 10px;
@@ -1247,6 +1131,7 @@ a#contact.bm-item.menu-item:focus-within {
 @media (min-width: 571px) and (max-width: 700px) {
   .pd8 {
     margin-left: 4px;
+    font-size: 13px;
   }
   .massive-padding {
     padding-top: 86px;
@@ -1266,6 +1151,9 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (min-width: 201px) and (max-width: 320px) {
+  .button.dropdown-item {
+    width: 11rem !important;
+  }
   .main-shoe-card {
     padding: 0px;
   }
@@ -1277,6 +1165,7 @@ a#contact.bm-item.menu-item:focus-within {
   .shoe_name_on_hover {
     font-size: 22px;
   }
+
   .size-list {
     padding: 10px;
   }
@@ -1311,3 +1200,136 @@ a#contact.bm-item.menu-item:focus-within {
     padding-top: 92px;
   }
 }
+
+/*****************************************************/
+@media (min-width: 1200px) and (max-width: 1400px) {
+  // .connect-logos {
+  //   left: 20%
+  // }
+  // .get-the-app {
+  //   right: 30%
+  // }
+  // .get-in-touch {
+  //   left: 22%
+  // }
+  .get-the-app {
+    right: 27%;
+  }
+  .youtube-apple {
+    right: 22%;
+  }
+  .bottom-logo {
+    left: 44%;
+  }
+}
+
+@media (min-width: 940px) and (max-width: 1199px) {
+  // .connect-logos {
+  //   left: 20%
+  // }
+  // .get-the-app {
+  //   right: 30%
+  // }
+  // .get-in-touch {
+  //   left: 22%
+  // }
+  .get-the-app {
+    right: 24% !important;
+  }
+  .youtube-apple {
+    right: 20% !important;
+  }
+  .bottom-logo {
+    left: 44%;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 939px) {
+  .connect-logos {
+    left: 22% !important;
+  }
+  // .get-the-app {
+  //   right: 30%
+  // }
+  .get-in-touch {
+    left: 24% !important;
+  }
+  .get-the-app {
+    right: 21% !important;
+  }
+  .youtube-apple {
+    right: 18% !important;
+  }
+  .bottom-logo {
+    left: 43% !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 809px) {
+  .connect-logos {
+    left: 22% !important;
+    width: 18% !important;
+  }
+  // .get-the-app {
+  //   right: 30%
+  // }
+  .get-in-touch {
+    left: 24% !important;
+  }
+  .get-the-app {
+    right: 19% !important;
+  }
+  .youtube-apple {
+    right: 17% !important;
+  }
+  .bottom-logo {
+    left: 42% !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 699px) {
+  .connect-logos {
+    width: 20% !important;
+    left: 16% !important;
+  }
+  // .get-the-app {
+  //   right: 30%
+  // }
+  .get-in-touch {
+    left: 17% !important;
+  }
+  .get-the-app {
+    right: 11% !important;
+  }
+  .youtube-apple {
+    width: 20% !important;
+    right: 8% !important;
+  }
+  .bottom-logo {
+    left: 41% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 549px) {
+  .connect-logos {
+    width: 25% !important;
+    left: 6% !important;
+  }
+  // .get-the-app {
+  //   right: 30%
+  // }
+  .get-in-touch {
+    left: 10% !important;
+  }
+  .get-the-app {
+    right: 9% !important;
+  }
+  .youtube-apple {
+    width: 25% !important;
+    right: 3% !important;
+  }
+  .bottom-logo {
+    left: 37% !important;
+  }
+}
+/*****************************************************/
