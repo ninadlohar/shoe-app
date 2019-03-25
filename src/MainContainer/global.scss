@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.regionNames {
+  padding-left: 40px;
+}
+
 .credit-cards {
   width: 50%;
   display: flex;
@@ -25,9 +29,7 @@
 
 .owner-contents {
   width: 50%;
-
 }
-
 
 .copyright {
   font-size: 8px;
@@ -298,11 +300,11 @@
   font-weight: 900;
 }
 
-.pd8:focus, pd8:active {
+.pd8:focus,
+pd8:active {
   background-color: black;
   list-style-type: none;
   color: white;
-
 }
 
 // .connect-logos {
@@ -319,8 +321,6 @@
 //     width: 20px !important;
 //   }
 // }
-
-
 
 .massive-padding {
   padding-left: 60px;
@@ -341,6 +341,10 @@
   text-align: left;
 }
 
+// .selectedRegions {
+//   padding-left: 30%;
+// }
+
 /** extra div that is hidden and only pops out when hover on shoe-card ends **/
 
 /** dropdown on active starts */
@@ -351,6 +355,10 @@
   text-decoration: none;
   background-color: white !important;
   outline: none;
+}
+
+button.dropdown-item {
+  width: 13rem !important;
 }
 
 .size-list {
@@ -683,7 +691,7 @@ a#contact.bm-item.menu-item:focus-within {
   .bottom-logo {
     position: absolute;
     bottom: 35px;
-    left: 44%
+    left: 44%;
   }
   .youtube-apple {
     position: absolute;
@@ -720,6 +728,7 @@ a#contact.bm-item.menu-item:focus-within {
   color: #545b62 !important;
   background-color: #fff !important;
   border: none;
+  max-width: 13rem;
 }
 
 .dropdown-menu.show {
@@ -922,7 +931,6 @@ a#contact.bm-item.menu-item:focus-within {
   .footer-contents .connect-logos {
     left: 10% !important;
     bottom: 90px !important;
-
   }
   .youtube-apple {
     right: 10% !important;
@@ -948,7 +956,6 @@ a#contact.bm-item.menu-item:focus-within {
     bottom: 16px;
   }
 }
-
 
 @media (min-width: 200px) and (max-width: 330px) {
   .show-hide-items.dropdown-item {
@@ -977,7 +984,7 @@ a#contact.bm-item.menu-item:focus-within {
   }
 }
 
-@media(min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .connect-logos {
     left: 10% !important;
   }
@@ -990,7 +997,8 @@ a#contact.bm-item.menu-item:focus-within {
   .get-the-app {
     right: 10% !important;
     bottom: 87px !important;
-  }.youtube-apple {
+  }
+  .youtube-apple {
     right: 10% !important;
   }
   .bottom-logo {
@@ -998,7 +1006,7 @@ a#contact.bm-item.menu-item:focus-within {
   }
 }
 
-@media(min-width: 438px) and (max-width: 575px) {
+@media (min-width: 438px) and (max-width: 575px) {
   .connect-logos {
     left: 4% !important;
   }
@@ -1011,7 +1019,8 @@ a#contact.bm-item.menu-item:focus-within {
   .get-the-app {
     right: 3% !important;
     bottom: 87px !important;
-  }.youtube-apple {
+  }
+  .youtube-apple {
     right: 4% !important;
   }
   .bottom-logo {
@@ -1020,7 +1029,7 @@ a#contact.bm-item.menu-item:focus-within {
   }
 }
 
-@media(min-width: 400px) and (max-width: 437px) {
+@media (min-width: 400px) and (max-width: 437px) {
   .connect-logos {
     left: 6% !important;
   }
@@ -1033,7 +1042,8 @@ a#contact.bm-item.menu-item:focus-within {
   .get-the-app {
     right: 3% !important;
     bottom: 87px !important;
-  }.youtube-apple {
+  }
+  .youtube-apple {
     right: 6% !important;
   }
   .bottom-logo {
@@ -1075,7 +1085,8 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
-  .slick-arrow.slick-next, .slick-arrow.slick-prev {
+  .slick-arrow.slick-next,
+  .slick-arrow.slick-prev {
     width: 7%;
   }
   .logo {
@@ -1105,7 +1116,6 @@ a#contact.bm-item.menu-item:focus-within {
     position: fixed;
   }
   /***/
-
 }
 
 @media (min-width: 500px) and (max-width: 989px) {
@@ -1150,7 +1160,8 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .youtube-apple {
     right: 27% !important;
-  }.get-the-app {
+  }
+  .get-the-app {
     right: 30% !important;
   }
 }
@@ -1168,16 +1179,14 @@ a#contact.bm-item.menu-item:focus-within {
   .get-the-app {
     right: 18% !important;
     bottom: 87px !important;
-  }.youtube-apple {
+  }
+  .youtube-apple {
     right: 16% !important;
   }
   .bottom-logo {
     left: 42% !important;
   }
-
 }
-
-
 
 @media (min-width: 769px) and (max-width: 5000px) {
   .ham-menu {
@@ -1268,13 +1277,14 @@ a#contact.bm-item.menu-item:focus-within {
   .size-list {
     padding: 10px;
   }
-  .sh , .sh1 {
+  .sh,
+  .sh1 {
     font-size: 12px;
     word-break: break-all;
   }
   .pd8 {
     font-size: 13px;
-    margin-left: 4px; 
+    margin-left: 4px;
   }
   .massive-padding {
     padding-top: 30%;
@@ -1298,5 +1308,3 @@ a#contact.bm-item.menu-item:focus-within {
     padding-top: 92px;
   }
 }
-
-

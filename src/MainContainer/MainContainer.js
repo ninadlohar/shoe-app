@@ -7,6 +7,14 @@ import RightNavbar from "./WebPageContents/Navbar/Navbar";
 import InputBox from "./WebPageContents/InputBox/InputBox";
 
 class MainContainer extends React.Component {
+  state = {
+    set: {
+      set1: [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+      set2: [6,6.5,7.0,7.5,8.0,8.5,9.0,9.5,10,10.5,11],
+      set3: [4,4.5,5.0,5.5,6,6.5,7.0,7.5,8.0,8.5,9.0,9.5,10,10.5,11]
+    }
+  }
+
   showSettings(event) {
     event.preventDefault();
   }
@@ -21,7 +29,6 @@ class MainContainer extends React.Component {
       var top = this.scrollY;
       var actualLogo = document.getElementById("logo");
       var navbarLogo = document.getElementById("nav-b");
-      var navbarLogoParent = document.getElementById("lo");
 
       var nav = document.getElementById("navbar-at-right");
       console.log(nav.offsetHeight);
@@ -31,20 +38,6 @@ class MainContainer extends React.Component {
         navbarLogo.style.display = "block";
         navbarLogo.classList.add("active");
       }
-      // window.onscroll = function() {
-      //   scrollFunction();
-      // };
-      // function scrollFunction() {
-      //   if (
-      //     document.body.scrollTop > 40 ||
-      //     document.documentElement.scrollTop > 40
-      //   ) {
-      //     document.getElementById("log").style.transition = "all 2s";
-      //     navbarLogoParent.style.transform =
-      //       "translate(-62px,-28px)"; /** if minus goes left(-58px) */
-      //     document.getElementById("log").style.transform = "scale(0.6, 0.6)";
-      //   }
-      // }
       if (top < 51) {
         nav.style.backgroundColor = "transparent";
         nav.style.transition = "all 0.5s";
@@ -126,11 +119,11 @@ class MainContainer extends React.Component {
                   </Menu>
                 </div>
                 <RightNavbar />
-                <InputBox />
+                <InputBox set1={this.state.set.set1} set2={this.state.set.set2} set3={this.state.set.set3} />
               </div>
-            </Col>
+            </Col> 
           </Row>
-          <WebPageContents />
+          <WebPageContents set1={this.state.set.set1} set2={this.state.set.set2} set3={this.state.set.set3} />
         </Container>
       </div>
     );

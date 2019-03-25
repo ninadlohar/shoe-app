@@ -15,19 +15,15 @@ import Footer from "./Footer/Footer";
 import OfferShoe from "../../assets/d1-offer.png";
 import NikeShoe from "../../assets/shoe.png";
 
-const WebPageContents = () => {
-  const set = {
-    set1: [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
-    set2: [6,6.5,7.0,7.5,8.0,8.5,9.0,9.5,10,10.5,11],
-    set3: [4,4.5,5.0,5.5,6,6.5,7.0,7.5,8.0,8.5,9.0,9.5,10,10.5,11]
-  };
+const WebPageContents = (props) => {
+
 
   return (
     <div>
       <Logo />
       <Header />
       <Trending />
-      <FirstRowCardScroll set1={set.set1} set2={set.set2} set3={set.set3} NikeShoe={NikeShoe} />
+      <FirstRowCardScroll set1={props.set1} set2={props.set2} set3={props.set3} NikeShoe={NikeShoe} />
       <CategoriesHeader />
       <CategoryImagesFixed />
       <BrandsHeader />
@@ -35,7 +31,7 @@ const WebPageContents = () => {
       <UpComingReleasesHeader />
       <UpcomingReleasesRowSlider />
       <DealsHeader />
-      <Deals set1={set.set1} set2={set.set2} set3={set.set3} OfferShoe={OfferShoe} />
+      <Deals set1={props.set1} set2={props.set2} set3={props.set3} OfferShoe={OfferShoe} />
       <Footer />
     </div>
   );

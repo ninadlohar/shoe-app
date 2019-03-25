@@ -4,7 +4,7 @@ import EnterToShops from "../ReusableComponents/EnterToShops";
 
 class Shoe extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
   state = {
     onClickEnterShopShow: false,
@@ -12,17 +12,17 @@ class Shoe extends React.Component {
     regions: ["EU", "UK", "US"],
     selectedRegion: null,
     active: null,
-    activeSize: null,
+    activeSize: null
   };
 
   componentDidMount() {
     this.setState({
       selectedRegion: "EU"
-    })
+    });
   }
-  
+
   onClickEnterShopShow = (value, position) => {
-    if(this.state.activeSize === position) {
+    if (this.state.activeSize === position) {
       this.setState({
         activeSize: null
       });
@@ -33,90 +33,89 @@ class Shoe extends React.Component {
         selectedSize: value
       });
     }
-
   };
 
   selectedRegion = (region, position) => {
     if (region === "UK" || region === "US" || region === "EU") {
       this.setState({
-        selectedRegion: region,
+        selectedRegion: region
       });
     }
     if (this.state.active === position) {
-      this.setState({active : null})
+      this.setState({ active: null });
     } else {
-      this.setState({active : position})
+      this.setState({ active: position });
     }
   };
 
-  myColor = (position) => {
+  myColor = position => {
     if (this.state.active === position) {
       return {
         color: "black",
-        fontWeight:"bold"
-      }
+        fontWeight: "bold"
+      };
     }
-  }
+  };
 
-  setActive = (position) => {
+  setActive = position => {
     if (this.state.activeSize === position) {
       return {
         backgroundColor: "black",
         fontWeight: 900,
         color: "white"
-      }
+      };
     }
-  }
+  };
 
   render() {
     let EUregion = (
       <div className="s1">
-      {this.props.set1.map((v, i) => {
-        return (
-          <div
-            className="pd8"
-            key={v}
-            style={this.setActive(i)}
-            onClick={() => this.onClickEnterShopShow(v, i)}
-          >
-            {v}
-          </div>
-        );
-      })}
-    </div>
-    )
+        {this.props.set1.map((v, i) => {
+          return (
+            <div
+              className="pd8"
+              key={v}
+              style={this.setActive(i)}
+              onClick={() => this.onClickEnterShopShow(v, i)}
+            >
+              {v}
+            </div>
+          );
+        })}
+      </div>
+    );
     let UKregion = (
       <div className="s1">
-      {this.props.set2.map((v, i) => {
-        return (
-          <div
-            className="pd8"
-            key={v}
-            style={this.setActive(i)}
-            onClick={() => this.onClickEnterShopShow(v, i)}
-          >
-            {v}
-          </div>
-        );
-      })}
-    </div>
-    )
+        {this.props.set2.map((v, i) => {
+          return (
+            <div
+              className="pd8"
+              key={v}
+              style={this.setActive(i)}
+              onClick={() => this.onClickEnterShopShow(v, i)}
+            >
+              {v}
+            </div>
+          );
+        })}
+      </div>
+    );
     let USregion = (
       <div className="s1">
-      {this.props.set3.map((v, i) => {
-        return (
-          <div
-            className="pd8"
-            key={v}
-            style={this.setActive(i)}
-            onClick={() => this.onClickEnterShopShow(v, i)}
-          >
-            {v}
-          </div>
-        );
-      })}
-    </div>
-    )
+        {this.props.set3.map((v, i) => {
+          return (
+            <div
+              className="pd8"
+              key={v}
+              style={this.setActive(i)}
+              onClick={() => this.onClickEnterShopShow(v, i)}
+            >
+              {v}
+            </div>
+          );
+        })}
+      </div>
+    );
     return (
       <div className="main-shoe-card">
         <div className="shoe-card">
@@ -187,9 +186,9 @@ class Shoe extends React.Component {
                       </div>
                     </div>
                     <div className="size-list">
-                    {this.state.selectedRegion === "EU"? EUregion : null}
-                    {this.state.selectedRegion === "UK"? UKregion : null}
-                    {this.state.selectedRegion === "US"? USregion  : null}
+                      {this.state.selectedRegion === "EU" ? EUregion : null}
+                      {this.state.selectedRegion === "UK" ? UKregion : null}
+                      {this.state.selectedRegion === "US" ? USregion : null}
                     </div>
                   </div>
                   <div className="from_price_hover">

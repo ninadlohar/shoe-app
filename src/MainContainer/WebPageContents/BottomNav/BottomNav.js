@@ -19,9 +19,9 @@ const BottomNav = () => {
         <div  className="credit-cards">
         <span>
           <i className="fab fa-cc-visa"></i>
-          <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-discover"></i>
-          <i class="fab fa-cc-paypal"></i>
+          <i className="fab fa-cc-mastercard"></i>
+          <i className="fab fa-cc-discover"></i>
+          <i className="fab fa-cc-paypal"></i>
           </span>
         </div>
       </div>

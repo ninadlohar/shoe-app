@@ -14,9 +14,67 @@ class InputBox extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
+      onClickEnterShopShow: false,
+      selectedSize: null,
+      regions: ["EU", "UK", "US"],
+      selectedRegion: null,
+      active: null,
+      activeSize: null
     };
   }
+
+  componentDidMount() {
+    this.setState({
+      selectedRegion: "EU"
+    });
+  }
+
+  onClickEnterShopShow = (value, position) => {
+    if (this.state.activeSize === position) {
+      this.setState({
+        activeSize: null
+      });
+    } else {
+      this.setState({
+        activeSize: position,
+        onClickEnterShopShow: true,
+        selectedSize: value
+      });
+    }
+  };
+
+  selectedRegion = (region, position) => {
+    if (region === "UK" || region === "US" || region === "EU") {
+      this.setState({
+        selectedRegion: region
+      });
+    }
+    if (this.state.active === position) {
+      this.setState({ active: null });
+    } else {
+      this.setState({ active: position });
+    }
+  };
+
+  myColor = position => {
+    if (this.state.active === position) {
+      return {
+        color: "black",
+        fontWeight: "bold"
+      };
+    }
+  };
+
+  setActive = position => {
+    if (this.state.activeSize === position) {
+      return {
+        backgroundColor: "black",
+        fontWeight: 900,
+        color: "white"
+      };
+    }
+  };
 
   toggle() {
     this.setState({
@@ -24,6 +82,54 @@ class InputBox extends React.Component {
     });
   }
   render() {
+    let EUregion = (
+      <div className="s1">
+        {this.props.set1.map((v, i) => {
+          return (
+            <div
+              className="pd8"
+              key={v}
+              style={this.setActive(i)}
+              onClick={() => this.onClickEnterShopShow(v, i)}
+            >
+              {v}
+            </div>
+          );
+        })}
+      </div>
+    );
+    let UKregion = (
+      <div className="s1">
+        {this.props.set2.map((v, i) => {
+          return (
+            <div
+              className="pd8"
+              key={v}
+              style={this.setActive(i)}
+              onClick={() => this.onClickEnterShopShow(v, i)}
+            >
+              {v}
+            </div>
+          );
+        })}
+      </div>
+    );
+    let USregion = (
+      <div className="s1">
+        {this.props.set3.map((v, i) => {
+          return (
+            <div
+              className="pd8"
+              key={v}
+              style={this.setActive(i)}
+              onClick={() => this.onClickEnterShopShow(v, i)}
+            >
+              {v}
+            </div>
+          );
+        })}
+      </div>
+    );
     return (
       <div className="drop-Down">
         <div>
@@ -33,34 +139,27 @@ class InputBox extends React.Component {
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem className="show-hide-items">
-                Show/Hide Intermediate Sizes
-                <span className="show-size1">UK/</span>
-                <span className="show-size2">US/</span>
-                <span className="show-size3">UK</span>
-              </DropdownItem>
-              <DropdownItem>
+                <div>
+                  <span>Show/Hide Intermediate Sizes</span>
+                  <span className="regionNames">
+                    {this.state.regions.map((v, i) => {
+                      return (
+                        <span
+                          onClick={() => this.selectedRegion(v, i)}
+                          style={this.myColor(i)}
+                          className="selectedRegions"
+                          key={i}
+                        >
+                          {v}/
+                        </span>
+                      );
+                    })}
+                  </span>
+                </div>
                 <div className="size-list">
-                  <div className="s1">
-                    <div className="pd8">36</div>
-                    <div className="pd8">37</div>
-                    <div className="pd8">38</div>
-                    <div className="pd8">39</div>
-                    <div className="pd8">40</div>
-                    <div className="pd8">41</div>
-                  </div>
-                  <div className="s2">
-                    <div className="pd8">42</div>
-                    <div className="pd8">43</div>
-                    <div className="pd8">44</div>
-                    <div className="pd8">45</div>
-                    <div className="pd8">46</div>
-                    <div className="pd8">47</div>
-                  </div>
-                  <div className="s3">
-                    <div className="pd8">48</div>
-                    <div className="pd8">49</div>
-                    <div className="pd8">50</div>
-                  </div>
+                  {this.state.selectedRegion === "EU" ? EUregion : null}
+                  {this.state.selectedRegion === "UK" ? UKregion : null}
+                  {this.state.selectedRegion === "US" ? USregion : null}
                 </div>
               </DropdownItem>
             </DropdownMenu>
