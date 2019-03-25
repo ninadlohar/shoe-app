@@ -10,17 +10,21 @@ const Footer = () => {
         <div className="get-in-touch">
           <h3>Get In Touch</h3>
         </div>
+
         <div className="bottom-logo">
           <img
             src={require("../../../assets/just_part_of_img/omf.png")}
             alt="omf"
           />
         </div>
+
         <div className="connect-logos">
-          <img
-            src={require("../../../assets/connect-image/email.png")}
-            alt="email"
-          />
+          <a href="https://www.google.com">
+            <img
+              src={require("../../../assets/connect-image/email.png")}
+              alt="email"
+            />
+          </a>
           <img
             src={require("../../../assets/connect-image/linkedin-logo.png")}
             alt="linkedin"

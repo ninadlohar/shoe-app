@@ -10,10 +10,26 @@ class MainContainer extends React.Component {
   state = {
     set: {
       set1: [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
-      set2: [6,6.5,7.0,7.5,8.0,8.5,9.0,9.5,10,10.5,11],
-      set3: [4,4.5,5.0,5.5,6,6.5,7.0,7.5,8.0,8.5,9.0,9.5,10,10.5,11]
+      set2: [6, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10, 10.5, 11],
+      set3: [
+        4,
+        4.5,
+        5.0,
+        5.5,
+        6,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10,
+        10.5,
+        11
+      ]
     }
-  }
+  };
 
   showSettings(event) {
     event.preventDefault();
@@ -56,9 +72,12 @@ class MainContainer extends React.Component {
             <Col md="12" sm="12" lg="12" xl="12" sm="12" className="nopadding">
               <div className="top-fluid-image">
                 <div className="ham-menu">
-                <div className="logo-when-resize">
-                <img src={require("../assets/on-my-feet.png")} alt="oh-my-foot" />
-                </div>
+                  <div className="logo-when-resize">
+                    <img
+                      src={require("../assets/on-my-feet.png")}
+                      alt="oh-my-foot"
+                    />
+                  </div>
                   <Menu right width={"300px"}>
                     <a
                       id="contact"
@@ -119,11 +138,19 @@ class MainContainer extends React.Component {
                   </Menu>
                 </div>
                 <RightNavbar />
-                <InputBox set1={this.state.set.set1} set2={this.state.set.set2} set3={this.state.set.set3} />
+                <InputBox
+                  set1={this.state.set.set1}
+                  set2={this.state.set.set2}
+                  set3={this.state.set.set3}
+                />
               </div>
-            </Col> 
+            </Col>
           </Row>
-          <WebPageContents set1={this.state.set.set1} set2={this.state.set.set2} set3={this.state.set.set3} />
+          <WebPageContents
+            set1={this.state.set.set1}
+            set2={this.state.set.set2}
+            set3={this.state.set.set3}
+          />
         </Container>
       </div>
     );
