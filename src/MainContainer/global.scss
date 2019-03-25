@@ -767,11 +767,8 @@ a#contact.bm-item.menu-item:focus-within {
 
 .shoe-card {
   width: 100%;
-  // display: inline-flex !important;
-  // justify-content: center;
   position: relative;
   overflow: hidden;
-  // padding: 8px;
   img {
     width: 100%;
     object-fit: contain;
@@ -1245,8 +1242,17 @@ a#contact.bm-item.menu-item:focus-within {
   .from_price_hover {
     padding-bottom: 0px;
   }
-
 }
+
+@media (min-width: 701px) and (max-width: 749px) {
+  .from_price_hover {
+    padding-bottom: 0px;
+  }
+  .massive-padding {
+    padding-top: 94px;
+  }
+}
+
 @media (min-width: 201px) and (max-width: 320px) {
   .main-shoe-card {
     padding: 0px;
@@ -1271,7 +1277,7 @@ a#contact.bm-item.menu-item:focus-within {
     margin-left: 4px; 
   }
   .massive-padding {
-    padding-top: 36%;
+    padding-top: 30%;
   }
   .inner-shoe-logo-on-hover img {
     width: 60px !important;
@@ -1284,6 +1290,12 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .shops-13 {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 380px) {
+  .massive-padding {
+    padding-top: 92px;
   }
 }
 

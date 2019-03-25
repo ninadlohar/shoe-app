@@ -170,8 +170,8 @@ class Shoe extends React.Component {
                     </div>
                     {/* </div> */}
                     <div className="row">
-                      <div className="col-8 sh">ULTRA SHOE LTD</div>
-                      <div className="col-4 sh1">
+                      <div className="col-7 sh">ULTRA SHOE LTD</div>
+                      <div className="col-5 sh1">
                         {this.state.regions.map((v, i) => {
                           return (
                             <span
