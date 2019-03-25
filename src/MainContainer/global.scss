@@ -952,7 +952,25 @@ a#contact.bm-item.menu-item:focus-within {
     left: -10px;
   }
   .shoe_name_on_hover {
-    padding-bottom: 6px;
+    padding-bottom: 0px !important;
+  }
+  .pd8 {
+    font-size: 14px;
+  }
+  .shoe_name_on_hover {
+    padding-bottom: 26px;
+  }
+}
+
+@media (min-width: 331px) and (max-width: 356px) {
+  .from_price_hover {
+    padding-bottom: 0px;
+  }
+  .pd8 {
+    font-size: 14px;
+  }
+  .shoe_name_on_hover {
+    padding-bottom: 26px;
   }
 }
 
@@ -1139,6 +1157,15 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .get-the-app {
     right: 30% !important;
+  }
+}
+
+@media (min-width: 593px) and (max-width: 660px) {
+  .shoe_name_on_hover {
+    padding-bottom: 18px;
+  }
+  .pd8 {
+    padding: 2px;
   }
 }
 
