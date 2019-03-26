@@ -141,12 +141,15 @@ class InputBox extends React.Component {
         <div>
           <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
             <DropdownToggle>
-              Sizes <i className="fas fa-angle-down" />
+              <span className="sizes">Sizes</span>{" "}
+              <i className="fas fa-angle-down" />
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem className="show-hide-items">
                 <div style={{ color: "#747474" }}>
-                  <span>Show/Hide Intermediate Sizes</span>
+                  <span className="show-hide">
+                    Show/Hide Intermediate Sizes
+                  </span>
                   <span className="regionNames">
                     {this.state.regions.map((v, i) => {
                       return (
@@ -179,7 +182,7 @@ class InputBox extends React.Component {
               id="inputText"
               placeholder="Search"
             />
-            <i className="fas fa-search" />
+            <i className="fas fa-search search-icon" />
           </Form>
         </div>
       </div>
