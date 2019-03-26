@@ -708,8 +708,8 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .connect-logos {
     position: absolute;
-    bottom: 70px;
-    width: 15%;
+    bottom: 65px;
+    width: 18%;
     left: 25%;
     display: flex;
     justify-content: space-evenly;
@@ -1182,6 +1182,7 @@ a#contact.bm-item.menu-item:focus-within {
 @media (min-width: 810px) and (max-width: 939px) {
   .connect-logos {
     left: 22% !important;
+    bottom: 65px;
   }
   // .get-the-app {
   //   right: 30%
@@ -1204,6 +1205,7 @@ a#contact.bm-item.menu-item:focus-within {
   .connect-logos {
     left: 22% !important;
     width: 18% !important;
+    bottom: 65px;
   }
   // .get-the-app {
   //   right: 30%
@@ -1226,6 +1228,7 @@ a#contact.bm-item.menu-item:focus-within {
   .connect-logos {
     width: 20% !important;
     left: 16% !important;
+    bottom: 65px;
   }
   // .get-the-app {
   //   right: 30%
