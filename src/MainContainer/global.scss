@@ -24,6 +24,7 @@
 
 .fa-envelope {
   font-size: 20px;
+  cursor: pointer;
   color: $white !important;
 }
 
@@ -31,6 +32,7 @@
 .fa-twitter,
 .fa-google-plus-g,
 .fa-youtube {
+  cursor: pointer;
   color: $white !important;
 }
 
@@ -415,6 +417,7 @@ button.dropdown-item {
 /** dropdown on active ends */
 
 #outer-container {
+  scroll-behavior: smooth !important;
   overflow: hidden !important;
 }
 
@@ -434,10 +437,6 @@ button.dropdown-item {
 
 .slick-dots {
   display: none;
-}
-
-.bg-color {
-  background-color: red;
 }
 
 .logo {
@@ -470,18 +469,11 @@ button.dropdown-item {
 
 .slick-arrow.slick-next {
   display: block;
-  background: rgba(84, 84, 84, 0.4) !important;
-  color: rgb(84, 84, 84);
-  background-color: rgba(255, 255, 255, 1);
-  background: filter-gradient(#ffffff, #cfcfcf, horizontal);
-  background: background-image(
-    linear-gradient(
-      left,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(246, 246, 246, 1) 42%,
-      rgba(204, 204, 204, 1) 100%
-    )
-  );
+  background: $slick-bgColor;
+  color: $slick-color;
+  background-color: $white;
+  background: $slick-gradient;
+  background: $slick-bgColor-gradient;
   height: 100%;
   width: 4%;
   justify-content: center !important;
@@ -492,23 +484,16 @@ button.dropdown-item {
 
 .slick-arrow.slick-next:active,
 .slick-arrow.slick-prev:active {
-  background: rgba(84, 84, 84, 0.9) !important;
+  background: $slick-active-bgColor;
 }
 
 .slick-arrow.slick-prev {
   display: block;
-  background: rgba(84, 84, 84, 0.4) !important;
-  color: rgb(84, 84, 84);
-  background-color: rgba(255, 255, 255, 1);
-  background: filter-gradient(#ffffff, #cfcfcf, horizontal);
-  background: background-image(
-    linear-gradient(
-      left,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(246, 246, 246, 1) 42%,
-      rgba(204, 204, 204, 1) 100%
-    )
-  );
+  background: $slick-bgColor;
+  color: $slick-color;
+  background-color: $white;
+  background: $slick-gradient;
+  background: $slick-bgColor-gradient;
   height: 100%;
   width: 4%;
   justify-content: center !important;
@@ -568,7 +553,7 @@ button.dropdown-item {
 }
 
 .btn-group .btn-secondary {
-  color: #495057;
+  color: $common-grey;
   background-color: $white;
   font-family: "Poppins", sans-serif;
   font-size: 9px;
@@ -665,6 +650,14 @@ a#contact.bm-item.menu-item:focus-within {
   justify-content: center;
   .content {
     margin: 1rem;
+    cursor: pointer;
+    color: $white;
+    text-decoration: none;
+  }
+  a:hover,
+  a:active {
+    color: white !important;
+    text-decoration: none !important;
   }
 }
 
@@ -1348,6 +1341,9 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .bottom-logo {
     display: none !important;
+  }
+  .footer-contents h3 {
+    font-size: 13px;
   }
 }
 /*****************************************************/

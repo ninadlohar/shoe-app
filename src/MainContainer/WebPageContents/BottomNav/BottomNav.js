@@ -5,12 +5,24 @@ const BottomNav = () => {
   return (
     <div className="bottom-nav">
       <div className="contents">
-        <div className="content">About</div>
-        <div className="content">Privacy Policy</div>
-        <div className="content">Terms and Condition</div>
-        <div className="content">Platform Policy</div>
-        <div className="content">Contact</div>
-        <div className="content get_in_touch">Get In Touch</div>
+        <a href="https://www.appscrip.com/about">
+          <div className="content">About</div>
+        </a>
+        <a href="">
+          <div className="content">Privacy Policy</div>
+        </a>
+        <a href="https://www.appscrip.com/hire-salesforce-developer-force-com-development/">
+          <div className="content">Terms and Condition</div>
+        </a>
+        <a href="https://www.appscrip.com/hire-salesforce-developer-force-com-development/">
+          <div className="content">Platform Policy</div>
+        </a>
+        <a href="https://www.appscrip.com/contact-us/">
+          <div className="content">Contact</div>
+        </a>
+        <a href="https://www.appscrip.com/contact-us/">
+          <div className="content get_in_touch">Get In Touch</div>
+        </a>
       </div>
       <div className="last-line">
         <div className="owner-contents">

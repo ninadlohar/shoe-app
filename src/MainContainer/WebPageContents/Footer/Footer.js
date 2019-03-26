@@ -19,11 +19,21 @@ const Footer = () => {
         </div>
 
         <div className="connect-logos">
-          <i className="fas fa-envelope" />
-          <i className="fab fa-linkedin" />
-          <i className="fab fa-twitter" />
-          <i className="fab fa-google-plus-g" />
-          <i className="fab fa-youtube" />
+          <a href="https://www.google.com">
+            <i className="fas fa-envelope" />
+          </a>
+          <a href="https://in.linkedin.com">
+            <i className="fab fa-linkedin" />
+          </a>
+          <a href="https://twitter.com/login">
+            <i className="fab fa-twitter" />
+          </a>
+          <a href="https://accounts.google.com/signin/v2/sl/pwd?service=CPanel&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+            <i className="fab fa-google-plus-g" />
+          </a>
+          <a href="https://www.youtube.com">
+            <i className="fab fa-youtube" />
+          </a>
         </div>
         <div className="get-the-app">
           <h3>Get The App</h3>
