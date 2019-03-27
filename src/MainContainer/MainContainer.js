@@ -39,7 +39,7 @@ class MainContainer extends React.Component {
   }
   /** js code */
 
-  componentWillMount() {
+  componentDidMount() {
     const w = window;
     w.addEventListener("scroll", function(event) {
       var top = this.scrollY;

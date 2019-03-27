@@ -1154,9 +1154,10 @@ a#contact.bm-item.menu-item:focus-within {
 
 /*****************************************************/
 @media (min-width: 1200px) and (max-width: 1400px) {
-  // .connect-logos {
-  //   left: 20%
-  // }
+  .connect-logos {
+    // left: 20%
+    bottom: 62px !important;
+  }
   // .get-the-app {
   //   right: 31% !important;
   // }
@@ -1175,9 +1176,10 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 @media (min-width: 940px) and (max-width: 1199px) {
-  // .connect-logos {
-  //   left: 20%
-  // }
+  .connect-logos {
+    // left: 20%
+    bottom: 62px !important;
+  }
   // .get-the-app {
   //   right: 30%
   // }
@@ -1198,7 +1200,7 @@ a#contact.bm-item.menu-item:focus-within {
 @media (min-width: 810px) and (max-width: 939px) {
   .connect-logos {
     left: 22% !important;
-    bottom: 65px;
+    bottom: 62px !important;
   }
   // .get-the-app {
   //   right: 30%
@@ -1219,15 +1221,15 @@ a#contact.bm-item.menu-item:focus-within {
 
 @media (min-width: 700px) and (max-width: 809px) {
   .connect-logos {
-    left: 22% !important;
-    width: 18% !important;
-    bottom: 65px;
+    left: 18% !important;
+    width: 22% !important;
+    bottom: 62px !important;
   }
   // .get-the-app {
   //   right: 30%
   // }
   .get-in-touch {
-    left: 24% !important;
+    left: 23% !important;
   }
   .get-the-app {
     right: 19% !important;
@@ -1242,15 +1244,15 @@ a#contact.bm-item.menu-item:focus-within {
 
 @media (min-width: 550px) and (max-width: 699px) {
   .connect-logos {
-    width: 20% !important;
-    left: 16% !important;
-    bottom: 65px;
+    width: 25% !important;
+    left: 11% !important;
+    bottom: 62px !important;
   }
   // .get-the-app {
   //   right: 30%
   // }
   .get-in-touch {
-    left: 19% !important;
+    left: 16% !important;
   }
   .get-the-app {
     right: 11% !important;
@@ -1273,6 +1275,7 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .connect-logos {
     width: 25% !important;
+    bottom: 62px !important;
     left: 12% !important;
   }
   .youtube-apple {
