@@ -696,7 +696,7 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .get-in-touch {
     bottom: 90px;
-    left: 29%;
+    left: 30%;
     position: absolute;
   }
   .get-the-app {
@@ -1142,11 +1142,11 @@ a#contact.bm-item.menu-item:focus-within {
   //   left: 20%
   // }
   // .get-the-app {
-  //   right: 30%
+  //   right: 31% !important;
   // }
-  // .get-in-touch {
-  //   left: 22%
-  // }
+  .get-in-touch {
+    left: 31% !important;
+  }
   .get-the-app {
     right: 27%;
   }
@@ -1165,9 +1165,9 @@ a#contact.bm-item.menu-item:focus-within {
   // .get-the-app {
   //   right: 30%
   // }
-  // .get-in-touch {
-  //   left: 22%
-  // }
+  .get-in-touch {
+    left: 30% !important;
+  }
   .get-the-app {
     right: 24% !important;
   }
@@ -1188,7 +1188,7 @@ a#contact.bm-item.menu-item:focus-within {
   //   right: 30%
   // }
   .get-in-touch {
-    left: 24% !important;
+    left: 26% !important;
   }
   .get-the-app {
     right: 21% !important;
@@ -1248,9 +1248,22 @@ a#contact.bm-item.menu-item:focus-within {
   }
 }
 
-@media (min-width: 300px) and (max-width: 549px) {
+@media (min-width: 500px) and (max-width: 549px) {
   .bottom-logo {
     left: 37% !important;
+  }
+  .get-in-touch {
+    left: 15% !important;
+  }
+  .connect-logos {
+    width: 25% !important;
+    left: 12% !important;
+  }
+  .youtube-apple {
+    right: 11% !important;
+  }
+  .get-the-app {
+    right: 10% !important;
   }
 }
 
@@ -1320,7 +1333,7 @@ a#contact.bm-item.menu-item:focus-within {
   }
   .footer-contents .connect-logos {
     left: 15% !important;
-    bottom: 132px !important;
+    bottom: 126px !important;
     width: 70% !important;
   }
   .youtube-apple {
