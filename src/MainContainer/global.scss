@@ -13,6 +13,22 @@
   align-items: center;
 }
 
+.hands-up {
+  .handsUpImg {
+    right: 7%;
+    position: absolute;
+    top: 9%;
+    height: inherit !important;
+    width: inherit !important;
+  }
+}
+
+.redLogo {
+  position: absolute;
+  top: 5%;
+  width: 20%;
+}
+
 .search-icon,
 .sizes {
   color: $search-sizes !important;
@@ -112,6 +128,7 @@
   font-weight: 900;
   color: $white;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .available {
@@ -126,11 +143,13 @@
 .region {
   color: #858585;
   font-weight: 100;
+  cursor: pointer;
 }
 .regionOnActive:active,
 .regionOnActive:focus {
   font-weight: 900;
   color: $black;
+  cursor: pointer;
 }
 .available2 {
   font-family: "Poppins", sans-serif;
@@ -161,6 +180,9 @@
   align-items: center;
 }
 .shoe_name {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   width: 100%;
   text-align: center;
   font-family: "Touche", sans-serif;
@@ -329,6 +351,11 @@
   visibility: visible;
 }
 
+// .extraPadding {
+//   padding-left: 7%;
+//   padding-right: 7%;
+// }
+
 .s1 {
   display: flex;
   word-wrap: break-word;
@@ -338,6 +365,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   flex-wrap: wrap;
+  // padding-left: 7%;
+  // padding-right: 7%;
 }
 
 .apple {
@@ -361,6 +390,7 @@
   text-align: left;
   font-weight: 900;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .pd8:focus,
@@ -376,6 +406,13 @@
   padding-right: 15px !important;
   padding-top: 98px;
 }
+
+.massive-padding-withDeals {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  padding-top: 36px;
+}
+
 .sh {
   font-weight: 900;
   text-align: center;
@@ -495,12 +532,17 @@ button.dropdown-item {
   justify-content: center !important;
   display: flex !important;
   align-items: center !important;
-  z-index: 1009 !important;
+  z-index: 4 !important;
 }
 
 .slick-arrow.slick-next:active,
 .slick-arrow.slick-prev:active {
   background: $slick-active-bgColor;
+}
+
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover {
+  background: $slick-hover-color;
 }
 
 .slick-arrow.slick-prev {
@@ -515,7 +557,7 @@ button.dropdown-item {
   justify-content: center !important;
   display: flex !important;
   align-items: center !important;
-  z-index: 1 !important;
+  z-index: 4 !important;
 }
 
 .ham-menu {
@@ -594,7 +636,7 @@ button.dropdown-item {
 }
 
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: $onHoverColorOverlay !important;
 }
 
 .bm-menu {
@@ -650,7 +692,7 @@ a#contact.bm-item.menu-item:focus-within {
   font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 0px;
-  color: rgba(255, 255, 255, 0.5);
+  color: $inputBoxFontColor;
   border-left: 1px solid #cfcfcf;
   // padding: 14px 16px;
 }
@@ -672,7 +714,7 @@ a#contact.bm-item.menu-item:focus-within {
   }
   a:hover,
   a:active {
-    color: white !important;
+    color: $white !important;
     text-decoration: none !important;
   }
 }
@@ -680,7 +722,6 @@ a#contact.bm-item.menu-item:focus-within {
 .brand-card {
   display: inline-flex !important;
   justify-content: center;
-  // box-shadow: 2px 0px 10px 1px rgba(196, 196, 196, 1);
   img {
     object-fit: contain;
     width: 100%;
@@ -771,8 +812,8 @@ a#contact.bm-item.menu-item:focus-within {
 }
 
 .dropdown-menu.show > .btn-secondary.dropdown-toggle {
-  color: #545b62 !important;
-  background-color: #fff !important;
+  color: $dropDownButtonColorOnActive !important;
+  background-color: $white !important;
   border: none;
   max-width: 13rem;
 }
@@ -781,7 +822,7 @@ a#contact.bm-item.menu-item:focus-within {
   background-clip: none;
   border-radius: 0px;
   border: none;
-  box-shadow: 0 0 1px 1px #e0e0e0;
+  box-shadow: 0 0 1px 1px $dropDownMenuColor;
   margin: 0px;
   font-family: "Poppins", sans-serif;
   font-size: 10px;
@@ -958,7 +999,6 @@ a#contact.bm-item.menu-item:focus-within {
 @media (min-width: 220px) and (max-width: 990px) {
   .al-it-center {
     text-align: center;
-    // padding: 8px;
     margin-bottom: 36px;
   }
 }
@@ -1120,6 +1160,11 @@ a#contact.bm-item.menu-item:focus-within {
   .size-list {
     padding: 10px;
   }
+  .sh {
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   .sh,
   .sh1 {
     font-size: 12px;
@@ -1155,12 +1200,8 @@ a#contact.bm-item.menu-item:focus-within {
 /*****************************************************/
 @media (min-width: 1200px) and (max-width: 1400px) {
   .connect-logos {
-    // left: 20%
     bottom: 62px !important;
   }
-  // .get-the-app {
-  //   right: 31% !important;
-  // }
   .get-in-touch {
     left: 31% !important;
   }
@@ -1177,12 +1218,8 @@ a#contact.bm-item.menu-item:focus-within {
 
 @media (min-width: 940px) and (max-width: 1199px) {
   .connect-logos {
-    // left: 20%
     bottom: 62px !important;
   }
-  // .get-the-app {
-  //   right: 30%
-  // }
   .get-in-touch {
     left: 30% !important;
   }
@@ -1202,9 +1239,6 @@ a#contact.bm-item.menu-item:focus-within {
     left: 22% !important;
     bottom: 62px !important;
   }
-  // .get-the-app {
-  //   right: 30%
-  // }
   .get-in-touch {
     left: 26% !important;
   }
@@ -1225,9 +1259,6 @@ a#contact.bm-item.menu-item:focus-within {
     width: 22% !important;
     bottom: 62px !important;
   }
-  // .get-the-app {
-  //   right: 30%
-  // }
   .get-in-touch {
     left: 23% !important;
   }
@@ -1248,9 +1279,6 @@ a#contact.bm-item.menu-item:focus-within {
     left: 11% !important;
     bottom: 62px !important;
   }
-  // .get-the-app {
-  //   right: 30%
-  // }
   .get-in-touch {
     left: 16% !important;
   }

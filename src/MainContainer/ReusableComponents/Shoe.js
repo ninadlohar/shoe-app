@@ -75,7 +75,7 @@ class Shoe extends React.Component {
 
   render() {
     let EUregion = (
-      <div className="s1">
+      <div className="s1 extraPadding">
         {this.props.set1.map((v, i) => {
           return (
             <div
@@ -91,7 +91,7 @@ class Shoe extends React.Component {
       </div>
     );
     let UKregion = (
-      <div className="s1">
+      <div className="s1 extraPadding">
         {this.props.set2.map((v, i) => {
           return (
             <div
@@ -107,7 +107,7 @@ class Shoe extends React.Component {
       </div>
     );
     let USregion = (
-      <div className="s1">
+      <div className="s1 extraPadding">
         {this.props.set3.map((v, i) => {
           return (
             <div
@@ -122,20 +122,30 @@ class Shoe extends React.Component {
         })}
       </div>
     );
+    let available = (
+      <div>
+        <div className="row available">Available</div>
+        <div className="row shops-13">13 Shops</div>
+      </div>
+    );
+    let redLogo = (
+      <div className="redLogo">
+        <img src={this.props.redLogo} alt="offLogo" />
+      </div>
+    );
     return (
       <div className="main-shoe-card">
         <div className="shoe-card">
           <div className="actual-img-shoe-card">
             {/** the display card starts */}
             <div className="displayCard">
+              {this.props.redLogo ? redLogo : available}
               <div className="displayCard-innerBody">
                 <div className="col-12">
-                  <div className="row available">Available</div>
-                  <div className="row shops-13">13 Shops</div>
                   <div className="row shoe-img">
                     <div className="inner-shoe-img">
                       <img
-                        src={require("../../assets/just_part_of_img/og_shoe.png")}
+                        src={require("../../assets/just_part_of_img/MaskGroup45.png")}
                         alt="nike-shoe"
                       />
                     </div>
@@ -160,7 +170,22 @@ class Shoe extends React.Component {
             <div className="test2">
               <div className="col-12">
                 <div className="row">
-                  <div className="col-12 massive-padding">
+                  <div className="hands-up">
+                    <img
+                      src={this.props.handUpImage}
+                      alt="hands-up-image"
+                      className="handsUpImg"
+                      width="10%"
+                      height="10%"
+                    />
+                  </div>
+                  <div
+                    className={
+                      this.props.redLogo
+                        ? "massive-padding-withDeals"
+                        : "massive-padding"
+                    }
+                  >
                     {/* <div className="row"> */}
                     <div className="row shoe-logo-on-hover">
                       <div className="inner-shoe-logo-on-hover">

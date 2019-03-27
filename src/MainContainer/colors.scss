@@ -11,6 +11,10 @@ $cat-card-hover-clone: rgba(255, 255, 255, 0);
 $shoe-hover-card-bgColor: rgba(255, 255, 255, 0.5);
 $shoe-hover-card-boxShadow: 0px 0px 5px 2px rgba(247, 247, 247, 1);
 $shoes-box-shadow: 0px 2px 5px 0px rgba(225, 225, 225, 1);
+$onHoverColorOverlay: rgba(0, 0, 0, 0.5);
+$dropDownMenuColor: #e0e0e0;
+$inputBoxFontColor: rgba(255, 255, 255, 0.5);
+$dropDownButtonColorOnActive: #545b62;
 
 /** slick nav color starts */
 $slick-bgColor-gradient: background-image(
@@ -22,7 +26,8 @@ $slick-bgColor-gradient: background-image(
   )
 );
 $slick-gradient: filter-gradient(#ffffff, #cfcfcf, horizontal);
-$slick-bgColor: rgba(84, 84, 84, 0.4) !important;
+$slick-bgColor: rgba(198, 198, 198, 1) !important;
 $slick-color: rgb(84, 84, 84);
-$slick-active-bgColor: rgba(84, 84, 84, 0.9) !important;
+$slick-hover-color: rgba(179, 179, 179, 1) !important;
+$slick-active-bgColor: rgba(169, 169, 169, 1) !important;
 /** slick nav color end */

@@ -14,16 +14,22 @@ import BrandsRowScroll from "./BrandsRowScroll/BrandsRowScroll";
 import Footer from "./Footer/Footer";
 import OfferShoe from "../../assets/d1-offer.png";
 import NikeShoe from "../../assets/shoe.png";
+import HandUpImage from "../../assets/just_part_of_img/hand-up.png";
+import RedLogo from "../../assets/just_part_of_img/red-logo.png";
 
-const WebPageContents = (props) => {
-
-
+const WebPageContents = props => {
   return (
     <div>
       <Logo />
       <Header />
       <Trending />
-      <FirstRowCardScroll set1={props.set1} set2={props.set2} set3={props.set3} NikeShoe={NikeShoe} />
+      <FirstRowCardScroll
+        set1={props.set1}
+        set2={props.set2}
+        set3={props.set3}
+        NikeShoe={NikeShoe}
+        handUpImage={HandUpImage}
+      />
       <CategoriesHeader />
       <CategoryImagesFixed />
       <BrandsHeader />
@@ -31,7 +37,14 @@ const WebPageContents = (props) => {
       <UpComingReleasesHeader />
       <UpcomingReleasesRowSlider />
       <DealsHeader />
-      <Deals set1={props.set1} set2={props.set2} set3={props.set3} OfferShoe={OfferShoe} />
+      <Deals
+        set1={props.set1}
+        set2={props.set2}
+        set3={props.set3}
+        OfferShoe={OfferShoe}
+        handUpImage={HandUpImage}
+        redLogo={RedLogo}
+      />
       <Footer />
     </div>
   );

@@ -84,11 +84,46 @@ class FirstRowCardScroll extends React.Component {
     return (
       <div className="first-row-card-scroll-padding-l-r">
         <Slider {...settings}>
-          <Shoe set1={this.props.set1} set2={this.props.set2} set3={this.props.set3} shoe={this.props.OfferShoe} />
-          <Shoe set1={this.props.set1} set2={this.props.set2} set3={this.props.set3} shoe={this.props.OfferShoe} />
-          <Shoe set1={this.props.set1} set2={this.props.set2} set3={this.props.set3} shoe={this.props.OfferShoe} />
-          <Shoe set1={this.props.set1} set2={this.props.set2} set3={this.props.set3} shoe={this.props.OfferShoe} />
-          <Shoe set1={this.props.set1} set2={this.props.set2} set3={this.props.set3} shoe={this.props.OfferShoe} />
+          <Shoe
+            set1={this.props.set1}
+            set2={this.props.set2}
+            set3={this.props.set3}
+            shoe={this.props.OfferShoe}
+            redLogo={this.props.redLogo}
+            handUpImage={this.props.handUpImage}
+          />
+          <Shoe
+            set1={this.props.set1}
+            set2={this.props.set2}
+            set3={this.props.set3}
+            shoe={this.props.OfferShoe}
+            redLogo={this.props.redLogo}
+            handUpImage={this.props.handUpImage}
+          />
+          <Shoe
+            set1={this.props.set1}
+            set2={this.props.set2}
+            set3={this.props.set3}
+            shoe={this.props.OfferShoe}
+            redLogo={this.props.redLogo}
+            handUpImage={this.props.handUpImage}
+          />
+          <Shoe
+            set1={this.props.set1}
+            set2={this.props.set2}
+            set3={this.props.set3}
+            shoe={this.props.OfferShoe}
+            redLogo={this.props.redLogo}
+            handUpImage={this.props.handUpImage}
+          />
+          <Shoe
+            set1={this.props.set1}
+            set2={this.props.set2}
+            set3={this.props.set3}
+            shoe={this.props.OfferShoe}
+            redLogo={this.props.redLogo}
+            handUpImage={this.props.handUpImage}
+          />
         </Slider>
       </div>
     );
