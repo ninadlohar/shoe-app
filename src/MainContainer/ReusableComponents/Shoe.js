@@ -16,9 +16,15 @@ class Shoe extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({
-      selectedRegion: "EU"
-    });
+    this.setState(
+      {
+        selectedRegion: "EU",
+        active: 0
+      },
+      () => {
+        this.myColor(this.state.regions[0]);
+      }
+    );
   }
 
   onClickEnterShopShow = (value, position) => {

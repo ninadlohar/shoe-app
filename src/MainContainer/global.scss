@@ -55,9 +55,25 @@
   color: $white;
 }
 
+.selectedRegions {
+  padding-right: 4px;
+}
+
 .regionNames {
   padding-left: 40px;
   font-size: 11px;
+
+  span:nth-child(1),
+  span:nth-child(2) {
+    &::after {
+      content: "/";
+      display: inline-block;
+      position: relative;
+      width: auto;
+      height: auto;
+      left: 2px;
+    }
+  }
 }
 
 .credit-cards {
@@ -479,7 +495,7 @@ button.dropdown-item {
   justify-content: center !important;
   display: flex !important;
   align-items: center !important;
-  z-index: 1 !important;
+  z-index: 1009 !important;
 }
 
 .slick-arrow.slick-next:active,

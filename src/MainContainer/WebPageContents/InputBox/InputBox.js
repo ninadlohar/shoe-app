@@ -11,8 +11,8 @@ import {
 class InputBox extends React.Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
+    this.myColor = this.myColor.bind(this);
     this.state = {
       dropdownOpen: false,
       onClickEnterShopShow: false,
@@ -22,12 +22,19 @@ class InputBox extends React.Component {
       active: null,
       activeSize: null
     };
+    // console.log(this.myColor(this.state.regions[0]));
   }
 
   componentDidMount() {
-    this.setState({
-      selectedRegion: "EU"
-    });
+    this.setState(
+      {
+        selectedRegion: this.state.regions[0],
+        active: 0
+      },
+      () => {
+        this.myColor(this.state.regions[0]);
+      }
+    );
   }
 
   onClickEnterShopShow = (value, position) => {
@@ -87,6 +94,7 @@ class InputBox extends React.Component {
       };
     });
   }
+  3;
   render() {
     let EUregion = (
       <div className="s1">
@@ -159,7 +167,7 @@ class InputBox extends React.Component {
                           className="selectedRegions"
                           key={i}
                         >
-                          {v}/
+                          {v}
                         </span>
                       );
                     })}
